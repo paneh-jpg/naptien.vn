@@ -110,6 +110,15 @@
     color: #aeaeae;
   }
 
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  font: inherit;
+  line-height: normal;
+  box-sizing: border-box;
+  height: 100%;
+  flex: 1;
+
   &::-webkit-search-decoration,
   &::-webkit-search-cancel-button,
   &::-webkit-search-results-button,
