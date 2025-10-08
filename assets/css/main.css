@@ -195,6 +195,11 @@ select:-webkit-autofill:hover {
   caret-color: var(--text-color);
 }
 
+input,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
 :root {
   --space-x-sm: 0;
   --space-x-md: calc((100vw - 540px) / 2);
@@ -2672,11 +2677,13 @@ select:-webkit-autofill:hover {
   width: 1.051px;
   height: 100%;
   background: #fff0ec;
+  flex-shrink: 0;
 }
 
 .search-bar__left {
   position: relative;
   padding: 12px 13px 12px 0;
+  flex-shrink: 0;
 }
 
 .search-bar__dropdown {
@@ -2748,15 +2755,13 @@ select:-webkit-autofill:hover {
   background: #f5f5f5;
 }
 
-/* Bên phải (input + icon search) */
 .search-bar-right {
   display: flex;
   align-items: center;
-  flex: 1;
+  flex-shrink: 0;
 }
 
 .search-bar__input {
-  flex: 1;
   border: none;
   outline: none;
   color: #5c5c5c;
@@ -2766,6 +2771,9 @@ select:-webkit-autofill:hover {
 }
 .search-bar__input::placeholder {
   color: #aeaeae;
+}
+.search-bar__input::-webkit-search-decoration, .search-bar__input::-webkit-search-cancel-button, .search-bar__input::-webkit-search-results-button, .search-bar__input::-webkit-search-results-decoration {
+  display: none;
 }
 
 .search-bar__button {

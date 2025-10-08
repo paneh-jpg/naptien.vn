@@ -1,7 +1,8 @@
-function load(selector, path) {
+function load(selector, path, callback) {
   const cached = localStorage.getItem(path);
   if (cached) {
     document.querySelector(selector).innerHTML = cached;
+    if (callback) callback();
   }
 
   fetch(path)
@@ -10,9 +11,30 @@ function load(selector, path) {
       if (html !== cached) {
         document.querySelector(selector).innerHTML = html;
         localStorage.setItem(path, html);
+        if (callback) callback();
       }
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Lặp qua tất cả dropdown trong trang
+  document.querySelectorAll(".dropdown").forEach((dropdown) => {
+    const items = dropdown.querySelectorAll(".top-menu__item");
+    if (!items.length) return;
+
+    // 1️⃣ Mặc định active item đầu tiên
+    items[0].classList.add("top-menu__item--active");
+
+    // 2️⃣ Lắng nghe hover trên mỗi item
+    items.forEach((item) => {
+      item.addEventListener("mouseenter", () => {
+        const active = dropdown.querySelector(".top-menu__item--active");
+        if (active) active.classList.remove("top-menu__item--active");
+        item.classList.add("top-menu__item--active");
+      });
+    });
+  });
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   // Tất cả config dropdown bạn muốn dùng
@@ -78,16 +100,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Lặp qua tất cả dropdown trong trang
+function initTopMenuDropdown() {
   document.querySelectorAll(".dropdown").forEach((dropdown) => {
+    if (dropdown.dataset.initialized) return; // 🔒 Chặn lặp
+    dropdown.dataset.initialized = "true";
+
     const items = dropdown.querySelectorAll(".top-menu__item");
     if (!items.length) return;
 
-    // 1️⃣ Mặc định active item đầu tiên
     items[0].classList.add("top-menu__item--active");
 
-    // 2️⃣ Lắng nghe hover trên mỗi item
     items.forEach((item) => {
       item.addEventListener("mouseenter", () => {
         const active = dropdown.querySelector(".top-menu__item--active");
@@ -96,4 +118,4 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
-});
+}
