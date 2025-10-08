@@ -1,0 +1,163 @@
+@use "../abstracts";
+
+%flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth {
+  @extend %flexCenter;
+
+  min-width: 100vw;
+  min-height: 100vh;
+
+  background-image: url(../../assets/img/auth/auth-background.png);
+  background-size: cover;
+
+  &__inner {
+    display: flex;
+    max-width: min(1016px, 90%);
+
+    border-radius: 45px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 6px 12px 33.1px 0 rgba(229, 229, 229, 0.3);
+    backdrop-filter: blur(11.949999809265137px);
+
+    @include abstracts.screen(lg) {
+      flex-direction: column;
+      margin: 50px 0;
+    }
+  }
+
+  &__card {
+    &--intro {
+      width: 50%;
+      padding: 100px 52px 150px 70px;
+
+      @include abstracts.screen(lg) {
+        width: 100%;
+        padding: 50px;
+      }
+
+      @include abstracts.screen(sm) {
+        padding: 30px;
+      }
+    }
+
+    &--form {
+      flex: 1;
+      border-radius: 45px;
+      background: #fff;
+      padding: 86px 68px;
+
+      @include abstracts.screen(lg) {
+        padding: 50px;
+      }
+
+      @include abstracts.screen(sm) {
+        padding: 30px;
+      }
+
+      &-signup {
+        padding: 100px 68px;
+
+        @include abstracts.screen(lg) {
+          padding: 50px;
+        }
+
+        @include abstracts.screen(sm) {
+          padding: 30px;
+        }
+      }
+    }
+  }
+
+  &__title {
+    color: #404040;
+    font-family: Poppins, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 133.333%;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &__desc {
+    margin-top: 30px;
+    margin-bottom: 42px;
+    color: #323232;
+    font-family: Quicksand, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-size: 1.4rem !important;
+    font-weight: 700;
+  }
+
+  &__submit {
+    flex-shrink: 0;
+    margin-left: -95px !important;
+  }
+}
+
+.social-login {
+  margin-top: 47px;
+
+  &__text {
+    display: inline-block;
+    color: #999;
+    font-family: Inter, sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  &__list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+
+.signup {
+  &__step {
+    display: flex;
+    margin-bottom: 16px;
+    color: #323232;
+    font-family: Quicksand, sans-serif;
+    font-size: 1.6rem;
+
+    font-weight: 600;
+  }
+
+  &__number {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: rgba(240, 240, 240, 0.8);
+    background-blend-mode: lighten;
+
+    color: #000;
+    font-family: Quicksand, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 155.556%;
+
+    margin-right: 16px;
+  }
+
+  &__btn-wrap {
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+  }
+}

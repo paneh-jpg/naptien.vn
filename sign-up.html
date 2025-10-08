@@ -20,11 +20,11 @@
     />
     <link rel="manifest" href="./assets/favicon/site.webmanifest" />
 
-    <!-- Google Font: Poppins -->
+    <!-- Google Font: Poppins, Poppins, Inter, Quicksand -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
 
@@ -35,16 +35,88 @@
     <script src="./assets/js/scripts.js"></script>
   </head>
   <body>
-    <header id="header"></header>
-    <script>
-      load("#header", "./template/header.html");
-    </script>
+    <main class="auth">
+      <div class="auth__inner">
+        <div class="auth__card auth__card--intro">
+          <h2 class="auth__title">Easy steps to join membership.</h2>
+          <ul class="signup__steps">
+            <li class="signup__step">
+              <span class="signup__number">1</span>Sign up using your email.
+            </li>
+            <li class="signup__step">
+              <span class="signup__number">2</span>Please click the verification
+              link in your registered email.
+            </li>
+            <li class="signup__step">
+              <span class="signup__number">3</span>Complete the sign up form.
+            </li>
+            <li class="signup__step">
+              <span class="signup__number">4</span>You are all set, start enjoy
+              shopping in.
+            </li>
+          </ul>
+        </div>
+        <div class="auth__card auth__card--form auth__card--form-signup">
+          <h2 class="auth__title">Sign Up</h2>
+          <form class="form form--auth">
+            <div class="form__group">
+              <div class="form__text-input">
+                <img
+                  src="./assets/icon/message.svg"
+                  alt=""
+                  class="form__icon"
+                />
+                <img
+                  src="./assets/icon/alert-red.svg"
+                  alt=""
+                  class="form__icon--error"
+                />
+                <input
+                  type="email"
+                  class="form__input"
+                  placeholder="Email Address"
+                  required
+                  minlength="6"
+                />
+              </div>
+              <p class="form__error">Error</p>
+            </div>
+            <div class="signup__btn-wrap">
+              <a
+                href="./sign-up.html"
+                class="btn btn-rounded btn-md auth__btn signup__btn"
+              >
+                Send Verification Mail
+              </a>
+            </div>
+          </form>
 
-    <main>Sign Up</main>
-
-    <footer id="footer"></footer>
-    <script>
-      load("#footer", "./template/footer.html");
-    </script>
+          <div class="social-login">
+            <p class="social-login__text">
+              Sign in with existing login from a social network account
+            </p>
+            <div class="social-login__list">
+              <a href="#" class="social-login__item social-login__item--google">
+                <img
+                  src="./assets/img/auth/google.svg"
+                  alt=""
+                  class="social-login__icon"
+                />
+              </a>
+              <a href="" class="social-login__item social-login__item--github">
+                <img
+                  src="./assets/img/auth/github.svg"
+                  alt=""
+                  class="social-login__icon"
+                />
+              </a>
+              <a href="#" class="social-login__item social-login__item--apple">
+                <img src="./assets/img/auth/apple.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

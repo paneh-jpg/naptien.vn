@@ -20,11 +20,11 @@
     />
     <link rel="manifest" href="./assets/favicon/site.webmanifest" />
 
-    <!-- Google Font: Poppins -->
+    <!-- Google Font: Poppins, Poppins, Inter, Quicksand -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
 
@@ -35,17 +35,30 @@
     <script src="./assets/js/scripts.js"></script>
   </head>
   <body>
+    <header id="header"></header>
+    <script>
+      load("#header", "./templates/header.html");
+    </script>
     <div class="container">
-      <header id="header"></header>
-      <script>
-        load("#header", "./template/header.html");
-      </script>
-
-      <main>Home page</main>
+      <main style="margin-top: 100px">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          dolore quo aperiam fugit maxime rerum, est dolor, omnis obcaecati quae
+          veniam earum? At vel dolor nemo repudiandae nisi tempore obcaecati
+          alias, eum autem soluta eligendi mollitia porro excepturi cumque, cum
+          dicta, odio quos reprehenderit. Laboriosam tempore architecto ipsum
+          libero provident nisi dolor ut impedit expedita alias ex vero, nostrum
+          necessitatibus voluptatum dolorum ullam non maiores quod reiciendis,
+          fuga voluptate! Ad porro amet blanditiis, molestias nemo laborum
+          officiis neque repellendus consequatur id modi, reiciendis sapiente
+          exercitationem voluptatum voluptatibus ratione culpa praesentium!
+          Aliquam, omnis sequi quisquam non quasi odio ipsa a commodi.
+        </p>
+      </main>
 
       <footer id="footer"></footer>
       <script>
-        load("#footer", "./template/footer.html");
+        load("#footer", "./templates/footer.html");
       </script>
     </div>
   </body>

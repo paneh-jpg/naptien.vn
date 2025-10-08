@@ -1,0 +1,47 @@
+@use "sass:map";
+@use "sass:math";
+
+$container-max-widths: (
+  sm: 100%,
+  md: 540px,
+  lg: 720px,
+  xl: 960px,
+  xxl: 1140px,
+);
+
+$container-side-space: ();
+
+@each $breakpoint, $max-width in $container-max-widths {
+  @if (math.unit($max-width) == "px") {
+    $space: calc((100vw - #{$max-width}) / 2);
+    $container-side-space: map.merge(
+      $container-side-space,
+      (
+        $breakpoint: $space,
+      )
+    );
+  } @else {
+    $container-side-space: map.merge(
+      $container-side-space,
+      (
+        $breakpoint: 0,
+      )
+    );
+  }
+}
+
+$container-side-space: (
+  sm: 0,
+  md: calc((100vw - 540px) / 2),
+  lg: calc((100vw - 720px) / 2),
+  xl: calc((100vw - 960px) / 2),
+  xxl: calc((100vw - 1140px) / 2),
+);
+
+:root {
+  --space-x-sm: #{map.get($container-side-space, sm)};
+  --space-x-md: #{map.get($container-side-space, md)};
+  --space-x-lg: #{map.get($container-side-space, lg)};
+  --space-x-xl: #{map.get($container-side-space, xl)};
+  --space-x-xxl: #{map.get($container-side-space, xxl)};
+}

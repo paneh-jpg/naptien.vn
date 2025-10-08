@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI/UX | Style</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Scripts -->
+    <script src="./assets/js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="sg">
+      <!-- SIDEBAR -->
+      <aside class="sg__sidebar">
+        <div class="sg__sidebar-head">
+          <div class="sg__logo">STYLE GUIDELINE</div>
+        </div>
+
+        <nav class="sg__nav" aria-label="Style guide navigation">
+          <ul class="sg__nav-list">
+            <li class="sg__nav-item" data-tab="tab-colors">Colors & Styles</li>
+            <li class="sg__nav-item" data-tab="tab-typography">Typography</li>
+            <li class="sg__nav-item" data-tab="tab-buttons">Buttons</li>
+            <li class="sg__nav-item" data-tab="tab-texts">Text Inputs</li>
+            <li class="sg__nav-item sg__nav-item--active" data-tab="tab-badges">
+              Badges
+            </li>
+            <li class="sg__nav-item" data-tab="tab-spacing">Spacing</li>
+            <li class="sg__nav-item" data-tab="tab-variants">Variants</li>
+            <li class="sg__nav-item" data-tab="tab-components">Components</li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+      <main class="sg__content">
+        <!-- TAB: Colors -->
+        <div id="tab-colors" class="sg__panel" aria-labelledby="tab-colors">
+          <section>
+            <h1 class="sg__title">Color & Style</h1>
+
+            <div class="sg-section sg-section--card">
+              <h2 class="sg-section__title">Primary Colors</h2>
+              <div class="colors">
+                <div class="color color--primary">
+                  <p class="color__meta">#ED5A25</p>
+                  <div
+                    class="color__swatch"
+                    style="background: var(--color-primary)"
+                  ></div>
+                </div>
+              </div>
+
+              <h2 class="sg-section__title">Secondary Colors</h2>
+              <div class="palette">
+                <!-- gradient row: mimick many small swatches -->
+                <div class="palette__row">
+                  <div class="color">
+                    <p class="color__meta">#782000</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-secondary-1)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#8C2500</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-secondary-2)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#AA2E02</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-secondary-3)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#C53D0C</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-secondary-4)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#DC4D1A</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-secondary-5)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#ED5A25</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-secondary-6)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#FF6F3B</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-secondary-7)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#FF7F50</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-secondary-8)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#FF9E7B</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-secondary-9)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#FFB59B</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-secondary-10)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#FFCEBC</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-secondary-11)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#FFDBCE</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-secondary-12)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#FFF4F1</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-secondary-13)"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="sg-section__title">Tertiary Colors for Chart</h2>
+              <div class="palette">
+                <!-- gradient row: mimick many small swatches -->
+                <div class="palette__row">
+                  <div class="color">
+                    <p class="color__meta">#C9E9E6</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-chart-1)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#A6D8C0</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-chart-2)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#9DD29C</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-chart-3)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#ACD58A</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-chart-4)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#C6DE89</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-chart-5)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#E5EA87</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-chart-6)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#FFF685</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-chart-7)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#FFDD7F</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-chart-8)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#FFCE7B</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-chart-9)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#FBB273</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-chart-10)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#F69788</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-chart-11)"
+                    ></div>
+                  </div>
+                  <div class="color">
+                    <p class="color__meta">#F3869B</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-chart-12)"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sg__row sg__row--sb sg__row-g">
+                <div class="sg-col sg-col-fw">
+                  <h2 class="sg-section__title">Succes Colors</h2>
+                  <div class="palette">
+                    <!-- gradient row: mimick many small swatches -->
+                    <div class="palette__row">
+                      <div class="color">
+                        <p class="color__meta">#00D800</p>
+                        <div
+                          class="color__swatch--small"
+                          style="background: var(--color-success-1)"
+                        ></div>
+                      </div>
+                      <div class="color">
+                        <p class="color__meta">#63c29d</p>
+                        <div
+                          class="color__swatch--small"
+                          style="background: var(--color-success-2)"
+                        ></div>
+                      </div>
+                      <div class="color">
+                        <p class="color__meta">#6ac17b</p>
+                        <div
+                          class="color__swatch--small"
+                          style="background: var(--color-success-3)"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sg-col sg-col-fw">
+                  <h2 class="sg-section__title">Warning Colors</h2>
+                  <div class="palette">
+                    <div class="palette__row">
+                      <div class="color">
+                        <p class="color__meta">#FCF6EA</p>
+                        <div
+                          class="color__swatch--small"
+                          style="background: var(--color-warning-1)"
+                        ></div>
+                      </div>
+                      <div class="color">
+                        <p class="color__meta">#FDD790</p>
+                        <div
+                          class="color__swatch--small"
+                          style="background: var(--color-warning-2)"
+                        ></div>
+                      </div>
+                      <div class="color">
+                        <p class="color__meta">#FFBA4A</p>
+                        <div
+                          class="color__swatch--small"
+                          style="background: var(--color-warning-3)"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sg-col sg-col-fw">
+                  <h2 class="sg-section__title">Danger Colors</h2>
+                  <div class="palette">
+                    <div class="palette__row">
+                      <div class="color">
+                        <p class="color__meta">#feebe7</p>
+                        <div
+                          class="color__swatch--small"
+                          style="background: var(--color-danger-1)"
+                        ></div>
+                      </div>
+                      <div class="color">
+                        <p class="color__meta">#FF5048</p>
+                        <div
+                          class="color__swatch--small"
+                          style="background: var(--color-danger-2)"
+                        ></div>
+                      </div>
+                      <div class="color">
+                        <p class="color__meta">#EE0033</p>
+                        <div
+                          class="color__swatch--small"
+                          style="background: var(--color-danger-3)"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="sg-section__title">Greys Colors</h2>
+              <div class="palette">
+                <div class="palette__row">
+                  <div class="color color-no-fw">
+                    <p class="color__meta">#FAFAFA</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--grey-1)"
+                    ></div>
+                  </div>
+                  <div class="color color-no-fw">
+                    <p class="color__meta">#F2F2F2</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--grey-2)"
+                    ></div>
+                  </div>
+                  <div class="color color-no-fw">
+                    <p class="color__meta">#E1E1E1</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--grey-3)"
+                    ></div>
+                  </div>
+                  <div class="color color-no-fw">
+                    <p class="color__meta">#C8C8C8</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--grey-4)"
+                    ></div>
+                  </div>
+                  <div class="color color-no-fw">
+                    <p class="color__meta">#B5B4B4</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--grey-5)"
+                    ></div>
+                  </div>
+                  <div class="color color-no-fw">
+                    <p class="color__meta">#44494D</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--grey-6)"
+                    ></div>
+                  </div>
+                  <div class="color color-no-fw">
+                    <p class="color__meta">#000000</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--grey-7)"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sg__row">
+                <div class="sg-col">
+                  <h2 class="sg-section__title">Dark Opacities</h2>
+                  <h3 class="sg-subtitle">Greys & Opacity</h3>
+                  <div class="palette">
+                    <!-- gradient row: mimick many small swatches -->
+                    <div class="palette__row">
+                      <div class="color">
+                        <p class="color__meta">#000000 - 5%</p>
+                        <div
+                          class="color__swatch--sw"
+                          style="background: var(--dark-opacity-1)"
+                        ></div>
+                      </div>
+                      <div class="color">
+                        <p class="color__meta">#000000 - 10%</p>
+                        <div
+                          class="color__swatch--sw"
+                          style="background: var(--dark-opacity-2)"
+                        ></div>
+                      </div>
+                      <div class="color">
+                        <p class="color__meta">#000000 - 20%</p>
+                        <div
+                          class="color__swatch--sw"
+                          style="background: var(--dark-opacity-3)"
+                        ></div>
+                      </div>
+                      <div class="color">
+                        <p class="color__meta">#000000 - 40%</p>
+                        <div
+                          class="color__swatch--sw"
+                          style="background: var(--dark-opacity-4)"
+                        ></div>
+                      </div>
+                      <div class="color">
+                        <p class="color__meta">#000000 - 80%</p>
+                        <div
+                          class="color__swatch--sw"
+                          style="background: var(--dark-opacity-5)"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sg-col">
+                  <h2 class="sg-section__title">Background</h2>
+
+                  <div class="palette">
+                    <!-- gradient row: mimick many small swatches -->
+                    <div class="palette__row">
+                      <div class="color">
+                        <h3 class="sg-subtitle-nm">Primary</h3>
+                        <p class="color__meta">#F2F2F2</p>
+                        <div
+                          class="color__swatch--sw"
+                          style="background: var(--bg-primary)"
+                        ></div>
+                      </div>
+                      <div class="color">
+                        <h3 class="sg-subtitle-nm">Secondary</h3>
+                        <p class="color__meta">#EDF1F8</p>
+                        <div
+                          class="color__swatch--sw"
+                          style="background: var(--bg-secondary)"
+                        ></div>
+                      </div>
+                      <div class="color">
+                        <h3 class="sg-subtitle-nm">Tertiary</h3>
+                        <p class="color__meta">#F7F8FA</p>
+                        <div
+                          class="color__swatch--sw"
+                          style="background: var(--bg-tertiary)"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h2 class="sg-section__title">Shadow</h2>
+              <div class="palette">
+                <!-- gradient row: mimick many small swatches -->
+                <div class="palette__row">
+                  <div class="color color-ml">
+                    <p class="color__meta">Soft Shadow</p>
+                    <div class="color__swatch--small shadow shadow-soft"></div>
+                  </div>
+                  <div class="color color-ml">
+                    <p class="color__meta">Medium Shadow</p>
+                    <div
+                      class="color__swatch--small shadow shadow-medium"
+                    ></div>
+                  </div>
+                  <div class="color color-ml">
+                    <p class="color__meta">Strong Shadow</p>
+                    <div
+                      class="color__swatch--small shadow shadow-strong"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h1 class="sg__title">Color Text</h1>
+            <div class="sg-section sg-section--card">
+              <div class="palette">
+                <!-- gradient row: mimick many small swatches -->
+                <div class="palette__row">
+                  <div class="color color-no-fw">
+                    <p class="color__meta">#AFAFAF</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-text-1)"
+                    ></div>
+                  </div>
+                  <div class="color color-no-fw">
+                    <p class="color__meta">#969696</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-text-2)"
+                    ></div>
+                  </div>
+                  <div class="color color-no-fw">
+                    <p class="color__meta">#4B4B4B</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-text-3)"
+                    ></div>
+                  </div>
+                  <div class="color color-no-fw">
+                    <p class="color__meta">#323232</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-text-4)"
+                    ></div>
+                  </div>
+                  <div class="color color-no-fw">
+                    <p class="color__meta">#191919</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--color-text-5)"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h1 class="sg__title">UI Element Chart</h1>
+            <div class="sg-section sg-section--card">
+              <div class="palette">
+                <div class="palette__row">
+                  <div class="color color-w-100">
+                    <p class="color__meta">#C9E9E6</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--ui-chart-1)"
+                    ></div>
+                  </div>
+                  <div class="color color-w-100">
+                    <p class="color__meta">#A6D8C0</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--ui-chart-2)"
+                    ></div>
+                  </div>
+                  <div class="color color-w-100">
+                    <p class="color__meta">#9DD29C</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--ui-chart-3)"
+                    ></div>
+                  </div>
+                  <div class="color color-w-100">
+                    <p class="color__meta">#ACD58A</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--ui-chart-4)"
+                    ></div>
+                  </div>
+                  <div class="color color-w-100">
+                    <p class="color__meta">#FFDD7F</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--ui-chart-5)"
+                    ></div>
+                  </div>
+                  <div class="color color-w-100">
+                    <p class="color__meta">#FFCE7B</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--ui-chart-6)"
+                    ></div>
+                  </div>
+                  <div class="color color-w-100">
+                    <p class="color__meta">#FBB273</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--ui-chart-7)"
+                    ></div>
+                  </div>
+                  <div class="color color-w-100">
+                    <p class="color__meta">#F69788</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--ui-chart-8)"
+                    ></div>
+                  </div>
+                  <div class="color color-w-100">
+                    <p class="color__meta">#F3869B</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--ui-chart-9)"
+                    ></div>
+                  </div>
+                </div>
+                <div class="palette__row">
+                  <div class="color color-no-fw">
+                    <p class="color__meta">#FAFAFA</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--ui-chart-10)"
+                    ></div>
+                  </div>
+                  <div class="color color-no-fw">
+                    <p class="color__meta">#F2F2F2</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--ui-chart-11)"
+                    ></div>
+                  </div>
+                  <div class="color color-no-fw">
+                    <p class="color__meta">#E1E1E1</p>
+                    <div
+                      class="color__swatch--small"
+                      style="background: var(--ui-chart-12)"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h1 class="sg__title">UI Main Icon</h1>
+            <div class="sg-section sg-section--card">
+              <div class="palette">
+                <div class="palette__row">
+                  <div class="color color-no-fw">
+                    <div
+                      class="color__swatch--small"
+                      style="
+                        background: linear-gradient(
+                          348deg,
+                          #ff875c 11.51%,
+                          #ffddd1 93.27%
+                        );
+                      "
+                    ></div>
+                  </div>
+                  <div class="color color-no-fw">
+                    <div
+                      class="color__swatch--small"
+                      style="
+                        background: linear-gradient(
+                          125deg,
+                          rgba(240, 78, 19, 0.4) 20.03%,
+                          rgba(255, 158, 123, 0.3) 89.48%
+                        );
+                        backdrop-filter: blur(1.3050189018249512px);
+                      "
+                    ></div>
+                  </div>
+                  <div class="color color-no-fw">
+                    <div
+                      class="color__swatch--small"
+                      style="
+                        background: linear-gradient(
+                          348deg,
+                          #e74b12 11.51%,
+                          #ff875b 93.27%
+                        );
+                      "
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- TAB: Typography -->
+        <section id="tab-typography" class="sg__panel">
+          <h1 class="sg__title">Typography</h1>
+
+          <div class="sg-section sg-section--card">
+            <div class="type-demo">
+              <div class="type-sample">
+                <div class="type-sample__big">Aa</div>
+                <div class="type-sample__meta">
+                  Poppins / Inter (display) — Weight 700
+                </div>
+              </div>
+
+              <div class="type-rows">
+                <h1 class="type-h1">Headline 1 — 48px / 56px</h1>
+                <h2 class="type-h2">Headline 2 — 34px / 42px</h2>
+                <h3 class="type-h3">Headline 3 — 24px / 32px</h3>
+                <h4 class="type-h4">Headline 4 — 20px / 28px</h4>
+
+                <p class="type-body">
+                  Paragraph / Body text — 16px / 24px. Lorem ipsum dolor sit
+                  amet, consectetur adipisicing elit. Quisquam, quibusdam.
+                </p>
+                <p class="type-caption">Caption / Small — 12px / 16px</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TAB: Buttons -->
+        <section id="tab-buttons" class="sg__panel">
+          <h1 class="sg__title">Buttons</h1>
+          <div class="sg-section sg-section--card">
+            <div class="sg__row">
+              <h2 class="sg-section__title">Size</h2>
+              <div class="sg-col">
+                <h3 class="sg-subtitle">Small Button</h3>
+                <button class="btn btn-sm">
+                  <img
+                    src="./assets/icon/camera-white.svg"
+                    alt=""
+                    class="btn__icon"
+                  />
+                  Button
+                </button>
+              </div>
+              <div class="sg-col">
+                <h3 class="sg-subtitle">Medium Button</h3>
+                <button class="btn btn-md">
+                  <img
+                    src="./assets/icon/camera-white.svg"
+                    alt=""
+                    class="btn__icon"
+                  />
+                  Button
+                </button>
+              </div>
+              <div class="sg-col">
+                <h3 class="sg-subtitle">Large Button</h3>
+                <button class="btn btn-lg">
+                  <img
+                    src="./assets/icon/camera-white.svg"
+                    alt=""
+                    class="btn__icon"
+                  />
+                  Button
+                </button>
+              </div>
+            </div>
+
+            <div class="sg__row">
+              <div>
+                <h2 class="sg-section__title">Border Radius</h2>
+                <div class="sg-col">
+                  <button class="btn btn-md btn-rounded">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="sg-section__title">Strokes</h2>
+                <div class="sg-col">
+                  <button class="btn btn-md btn-stroke">Button</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Primary Button -->
+          <div class="sg-section sg-section--card">
+            <h2 class="sg__title sg__title--small">Primary Button</h2>
+            <div class="button-demo-table">
+              <div class="row header">
+                <div class="cell empty"></div>
+                <div class="cell">Default</div>
+                <div class="cell">Hover</div>
+                <div class="cell">Active</div>
+                <div class="cell">Disabled</div>
+              </div>
+
+              <!-- No icon -->
+              <div class="row">
+                <div class="cell label">No icon</div>
+                <div class="cell">
+                  <button class="btn">Button text</button>
+                </div>
+                <div class="cell">
+                  <button class="btn btn-hover">Button text</button>
+                </div>
+                <div class="cell">
+                  <button class="btn btn-active">Button text</button>
+                </div>
+                <div class="cell">
+                  <button class="btn btn-disable">Button text</button>
+                </div>
+              </div>
+
+              <!-- Icon Left -->
+              <div class="row">
+                <div class="cell label">Icon Left</div>
+                <div class="cell">
+                  <button class="btn">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn btn-hover">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn btn-active">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn btn-disable">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+              </div>
+
+              <!-- Icon Right -->
+              <div class="row">
+                <div class="cell label">Icon Right</div>
+                <div class="cell">
+                  <button class="btn btn-icon-right">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn btn-icon-right btn-hover">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn btn-icon-right btn-active">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn btn-icon-right btn-disable">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Secondary Button -->
+          <div class="sg-section sg-section--card">
+            <h2 class="sg__title sg__title--small">Secondary Button</h2>
+            <div class="button-demo-table">
+              <div class="row header">
+                <div class="cell empty"></div>
+                <div class="cell">Default</div>
+                <div class="cell">Hover</div>
+                <div class="cell">Active</div>
+                <div class="cell">Disabled</div>
+              </div>
+
+              <!-- No icon -->
+              <div class="row">
+                <div class="cell label">No icon</div>
+                <div class="cell">
+                  <button class="btn-rounded btn-secondary">Button text</button>
+                </div>
+                <div class="cell">
+                  <button class="btn-rounded btn-secondary btn-secondary-hover">
+                    Button text
+                  </button>
+                </div>
+                <div class="cell">
+                  <button
+                    class="btn-rounded btn-secondary btn-secondary-active"
+                  >
+                    Button text
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn-rounded btn-secondary btn-disable">
+                    Button text
+                  </button>
+                </div>
+              </div>
+
+              <!-- Icon Left -->
+              <div class="row">
+                <div class="cell label">Icon Left</div>
+                <div class="cell">
+                  <button class="btn-rounded btn-secondary">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-secondary__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn-rounded btn-secondary btn-secondary-hover">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-secondary__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button
+                    class="btn-rounded btn-secondary btn-secondary-active"
+                  >
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-secondary__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn-rounded btn-secondary btn-disable">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-secondary__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+              </div>
+
+              <!-- Icon Right -->
+              <div class="row">
+                <div class="cell label">Icon Right</div>
+                <div class="cell">
+                  <button class="btn-rounded btn-secondary btn-icon-right">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-secondary__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button
+                    class="btn-rounded btn-secondary btn-icon-right btn-secondary-hover"
+                  >
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-secondary__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button
+                    class="btn-rounded btn-secondary btn-icon-right btn-secondary-active"
+                  >
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-secondary__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button
+                    class="btn-rounded btn-secondary btn-icon-right btn-disable"
+                  >
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-secondary__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Outline Button -->
+          <div class="sg-section sg-section--card">
+            <h2 class="sg__title sg__title--small">Outline Button</h2>
+            <div class="button-demo-table">
+              <div class="row header">
+                <div class="cell empty"></div>
+                <div class="cell">Default</div>
+                <div class="cell">Hover</div>
+                <div class="cell">Active</div>
+                <div class="cell">Disabled</div>
+              </div>
+
+              <!-- No icon -->
+              <div class="row">
+                <div class="cell label">No icon</div>
+                <div class="cell">
+                  <button class="btn-outline">Button text</button>
+                </div>
+                <div class="cell">
+                  <button class="btn-outline btn-outline-hover">
+                    Button text
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn-outline btn-outline-active">
+                    Button text
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn-outline btn-disable">Button text</button>
+                </div>
+              </div>
+
+              <!-- Icon Left -->
+              <div class="row">
+                <div class="cell label">Icon Left</div>
+                <div class="cell">
+                  <button class="btn-outline">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-outline__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn-outline btn-outline-hover">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-outline__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn-outline btn-outline-active">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-outline__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn-outline btn-disable">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-outline__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+              </div>
+
+              <!-- Icon Right -->
+              <div class="row">
+                <div class="cell label">Icon Right</div>
+                <div class="cell">
+                  <button class="btn-outline btn-icon-right">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-outline__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn-outline btn-icon-right btn-outline-hover">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-outline__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn-outline btn-icon-right btn-outline-active">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-outline__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+                <div class="cell">
+                  <button class="btn-outline btn-icon-right btn-disable">
+                    <img
+                      src="./assets/icon/camera-white.svg"
+                      alt=""
+                      class="btn-outline__icon"
+                    />
+                    Button
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Circle Button -->
+          <div class="sg-section sg-section--card">
+            <h2 class="sg__title sg__title--small">Circle Button</h2>
+            <div class="circle-button-table">
+              <div class="row header">
+                <div class="cell"></div>
+                <div class="cell">Large</div>
+                <div class="cell">Small</div>
+              </div>
+
+              <div class="row">
+                <div class="cell">Default</div>
+                <div class="cell">
+                  <button class="btn-circle lg default">+</button>
+                </div>
+                <div class="cell">
+                  <button class="btn-circle sm default">+</button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="cell">Secondary</div>
+                <div class="cell">
+                  <button class="btn-circle lg secondary">+</button>
+                </div>
+                <div class="cell">
+                  <button class="btn-circle sm secondary">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- TAB: Text Inputs -->
+        <section id="tab-texts" class="sg__panel">
+          <h1 class="sg__title">Text Inputs</h1>
+          <div class="sg-section sg-section--card">
+            <form class="form" novalidate>
+              <!-- Default -->
+              <div class="form__group">
+                <label class="form__label" for="f-default">Default</label>
+                <input
+                  id="f-default"
+                  class="form__text-input"
+                  type="text"
+                  placeholder="Label holder"
+                />
+                <div class="form__error" id="err-default">
+                  Trường này không hợp lệ
+                </div>
+              </div>
+
+              <!-- Focus (click vào để thấy) -->
+              <div class="form__group">
+                <label class="form__label" for="f-focus">Label</label>
+                <input
+                  id="f-focus"
+                  class="form__text-input"
+                  type="text"
+                  placeholder="Label holder"
+                />
+                <div class="form__error" id="err-focus">
+                  Trường này không hợp lệ
+                </div>
+              </div>
+
+              <!-- Active (filled) -->
+              <div class="form__group">
+                <label class="form__label" for="f-active">Label</label>
+                <input
+                  id="f-active"
+                  class="form__text-input"
+                  type="text"
+                  placeholder="Label"
+                  value="toanl"
+                />
+                <div class="form__error" id="err-active">
+                  Trường này không hợp lệ
+                </div>
+              </div>
+
+              <!-- Input (typing) - will validate after user types -->
+              <div class="form__group">
+                <label class="form__label" for="f-typing">Label (email)</label>
+                <input
+                  id="f-typing"
+                  class="form__text-input"
+                  type="email"
+                  placeholder="example@domain.com"
+                  required
+                />
+                <div class="form__error" id="err-typing">
+                  Vui lòng nhập email hợp lệ
+                </div>
+              </div>
+
+              <!-- Disabled -->
+              <div class="form__group">
+                <label class="form__label" for="f-disabled">Label</label>
+                <input
+                  id="f-disabled"
+                  class="form__text-input"
+                  type="text"
+                  placeholder="Label holder"
+                  disabled
+                />
+                <div class="form__error" id="err-disabled">
+                  Trường này không hợp lệ
+                </div>
+              </div>
+
+              <!-- Valid (pre-filled valid) -->
+              <div class="form__group">
+                <label class="form__label" for="f-valid">Label</label>
+                <input
+                  id="f-valid"
+                  class="form__text-input"
+                  type="text"
+                  placeholder="Label"
+                  value="toandt10"
+                  pattern="[a-zA-Z0-9]{5,}"
+                />
+                <div class="form__error" id="err-valid">
+                  Trường này không hợp lệ
+                </div>
+              </div>
+
+              <!-- Error (pre-filled invalid for demo) -->
+              <div class="form__group">
+                <label class="form__label" for="f-error">Label</label>
+                <input
+                  id="f-error"
+                  class="form__text-input"
+                  type="text"
+                  placeholder="Label"
+                  value="bad"
+                  pattern="[a-zA-Z0-9]{5,}"
+                />
+                <div class="form__error" id="err-error">
+                  Giá trị phải có ít nhất 5 ký tự chữ/số
+                </div>
+              </div>
+
+              <!-- Default Field (readonly / prefilled display) -->
+              <div class="form__group">
+                <label class="form__label" for="f-defaultfield">Label</label>
+                <input
+                  id="f-defaultfield"
+                  class="form__input form__input--default"
+                  type="text"
+                  value="Label holder"
+                  readonly
+                />
+                <div class="form__error" id="err-defaultfield">
+                  Trường này không hợp lệ
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- TAB: Badges -->
+        <section id="tab-badges" class="sg__panel sg__panel--active">
+          <h1 class="sg__title">Badges</h1>
+          <div class="sg-section sg-section--card">
+            <div class="badges">
+              <!-- Solid Counter -->
+              <div class="badges__group">
+                <h4 class="badges__title">Solid Counter</h4>
+                <div class="badges__items">
+                  <span class="badge badge--solid badge--square">2</span>
+                  <span class="badge badge--solid badge--square">10</span>
+                  <span class="badge badge--solid badge--square">+9</span>
+                  <span class="badge badge--solid badge--round">2</span>
+                  <span class="badge badge--solid badge--round">10</span>
+                  <span class="badge badge--solid badge--round">+9</span>
+                </div>
+              </div>
+
+              <!-- Soft Counter -->
+              <div class="badges__group">
+                <h4 class="badges__title">Soft Counter</h4>
+                <div class="badges__items">
+                  <span class="badge badge--soft badge--square">2</span>
+                  <span class="badge badge--soft badge--square">10</span>
+                  <span class="badge badge--soft badge--square">+9</span>
+                  <span class="badge badge--soft badge--round">2</span>
+                  <span class="badge badge--soft badge--round">10</span>
+                  <span class="badge badge--soft badge--round">+9</span>
+                </div>
+              </div>
+
+              <!-- Icon Badges -->
+              <div class="badges__group">
+                <h4 class="badges__title">Icon Badges</h4>
+                <div class="badges__items">
+                  <span class="badge badge--success">
+                    <img
+                      src="./assets/icon/arrow-up.svg"
+                      class="badge__icon"
+                      alt="up"
+                    />
+                    9.8%
+                  </span>
+                  <span class="badge badge--danger">
+                    <img
+                      src="./assets/icon/arrow-down.svg"
+                      class="badge__icon"
+                      alt="down"
+                    />
+                    9.8%
+                  </span>
+                  <span class="badge badge--icon badge--paid">
+                    <img
+                      src="./assets/icon/tick-circle.svg"
+                      class="badge__icon--2"
+                      alt="paid"
+                    />
+                    Paid
+                  </span>
+                  <span class="badge badge--icon badge--danger badge--danger-2">
+                    Cancelled
+                    <img
+                      src="./assets/icon/close.svg"
+                      class="badge__icon--2"
+                      alt="cancel"
+                    />
+                  </span>
+                  <span class="badge badge--icon badge--warning">
+                    <img
+                      src="./assets/icon/warning-yellow.svg"
+                      class="badge__icon--2"
+                      alt="warning"
+                    />
+                    Cancelled
+                  </span>
+                </div>
+              </div>
+
+              <!-- Soft Pill Badges -->
+              <div class="badges__group">
+                <h4 class="badges__title">Soft Pill Badges</h4>
+                <div class="badges__items">
+                  <span class="badge badge--pill badge--success">Success</span>
+                  <span class="badge badge--pill badge--danger">Danger</span>
+                  <span class="badge badge--pill badge--light">Light</span>
+                  <span class="badge badge--pill badge--info">Information</span>
+                  <span class="badge badge--pill badge--secondary"
+                    >Secondary</span
+                  >
+                  <span class="badge badge--pill badge--dark">Dark</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 class="sg__title">Tooltips</h1>
+          <div class="sg-section sg-section--card">
+            <div class="tooltip__list">
+              <div class="tooltip-demo">
+                <h3 class="badges__title">Default Tooltips</h3>
+                <div class="tooltip-demo__group">
+                  <div class="tooltip">
+                    <span class="tooltip__text">tooltip</span>
+                  </div>
+                  <div class="tooltip tooltip--top">
+                    <span class="tooltip__text">tooltip</span>
+                  </div>
+                  <div class="tooltip tooltip--bottom">
+                    <span class="tooltip__text">tooltip</span>
+                  </div>
+                  <div class="tooltip tooltip--right">
+                    <span class="tooltip__text">tooltip</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tooltip-demo">
+                <h3 class="badges__title">Analytics Tool</h3>
+                <div class="tooltip-demo__group">
+                  <div class="tooltip tooltip--analytics">
+                    <span class="tooltip__date">22 May,2022</span>
+                    <span class="tooltip__value">
+                      <span class="tooltip__dot"></span>
+                      90k
+                    </span>
+                  </div>
+                  <div class="tooltip tooltip--analytics tooltip--top">
+                    <span class="tooltip__date">22 May,2022</span>
+                    <span class="tooltip__value">
+                      <span class="tooltip__dot"></span>
+                      90k
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="sg__title">Avatar</h1>
+          <div class="sg-section sg-section--card">
+            <div class="avatar-demo">
+              <div class="avatar-demo__row">
+                <span class="avatar-demo__label">64px</span>
+                <div class="avatar avatar--64 avatar--circle">
+                  <img
+                    src="./assets/img/avatar/user-avt.jpg"
+                    alt="User"
+                    class="avatar__img"
+                  />
+                </div>
+                <div class="avatar avatar--64 avatar--rounded">
+                  <img
+                    src="./assets/img/avatar/user-avt.jpg"
+                    alt="User"
+                    class="avatar__img"
+                  />
+                </div>
+                <div class="avatar avatar--64 avatar--circle avatar--text">
+                  <span class="avatar__text">A</span>
+                </div>
+                <div class="avatar-2 avatar--64 avatar--rounded avatar--text">
+                  <span class="avatar__text">A</span>
+                </div>
+              </div>
+
+              <div class="avatar-demo__row">
+                <span class="avatar-demo__label">48px</span>
+                <div class="avatar avatar--48 avatar--circle">
+                  <img
+                    src="./assets/img/avatar/user-avt.jpg"
+                    alt="User"
+                    class="avatar__img"
+                  />
+                </div>
+                <div class="avatar avatar--48 avatar--rounded">
+                  <img
+                    src="./assets/img/avatar/user-avt.jpg"
+                    alt="User"
+                    class="avatar__img"
+                  />
+                </div>
+                <div class="avatar avatar--48 avatar--circle avatar--text">
+                  <span class="avatar__text">A</span>
+                </div>
+                <div class="avatar-2 avatar--48 avatar--rounded avatar--text">
+                  <span class="avatar__text">A</span>
+                </div>
+              </div>
+
+              <div class="avatar-demo__row">
+                <span class="avatar-demo__label">40px</span>
+                <div class="avatar avatar--40 avatar--circle">
+                  <img
+                    src="./assets/img/avatar/user-avt.jpg"
+                    alt="User"
+                    class="avatar__img"
+                  />
+                </div>
+                <div class="avatar avatar--40 avatar--rounded">
+                  <img
+                    src="./assets/img/avatar/user-avt.jpg"
+                    alt="User"
+                    class="avatar__img"
+                  />
+                </div>
+                <div class="avatar avatar--40 avatar--circle avatar--text">
+                  <span class="avatar__text">A</span>
+                </div>
+                <div class="avatar-2 avatar--40 avatar--rounded avatar--text">
+                  <span class="avatar__text">A</span>
+                </div>
+              </div>
+
+              <div class="avatar-demo__row">
+                <span class="avatar-demo__label">32px</span>
+                <div class="avatar avatar--32 avatar--circle">
+                  <img
+                    src="./assets/img/avatar/user-avt.jpg"
+                    alt="User"
+                    class="avatar__img"
+                  />
+                </div>
+                <div class="avatar avatar--32 avatar--rounded">
+                  <img
+                    src="./assets/img/avatar/user-avt.jpg"
+                    alt="User"
+                    class="avatar__img"
+                  />
+                </div>
+                <div class="avatar avatar--32 avatar--circle avatar--text">
+                  <span class="avatar__text">A</span>
+                </div>
+                <div class="avatar-2 avatar--32 avatar--rounded avatar--text">
+                  <span class="avatar__text">A</span>
+                </div>
+              </div>
+
+              <div class="avatar-demo__row">
+                <span class="avatar-demo__label">24px</span>
+                <div class="avatar avatar--24 avatar--circle">
+                  <img
+                    src="./assets/img/avatar/user-avt.jpg"
+                    alt="User"
+                    class="avatar__img"
+                  />
+                </div>
+                <div class="avatar avatar--24 avatar--rounded">
+                  <img
+                    src="./assets/img/avatar/user-avt.jpg"
+                    alt="User"
+                    class="avatar__img"
+                  />
+                </div>
+                <div class="avatar avatar--24 avatar--circle avatar--text">
+                  <span class="avatar__text">A</span>
+                </div>
+                <div class="avatar-2 avatar--24 avatar--rounded avatar--text">
+                  <span class="avatar__text">A</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="sg__title">Alerts</h1>
+          <div class="sg-section sg-section--card">
+            <button class="alert alert--danger">
+              <img
+                src="./assets/icon/alert-red.svg"
+                alt=""
+                class="alert__icon"
+              />
+              <p class="alert__text">
+                Hello there! A simple Danger alert - check it out
+              </p>
+              <p class="alert__close">✖</p>
+            </button>
+
+            <button class="alert alert--success">
+              <img
+                src="./assets/icon/alert-green.svg"
+                alt=""
+                class="alert__icon"
+              />
+              <p class="alert__text">
+                Hello there! A simple Success alert - check it out
+              </p>
+              <p class="alert__close">✖</p>
+            </button>
+
+            <button class="alert alert--warning">
+              <img
+                src="./assets/icon/warning-low-yellow.svg"
+                class="alert__icon"
+              />
+              <p class="alert__text">
+                Hello there! A simple Warning alert - check it out
+              </p>
+              <p class="alert__close">✖</p>
+            </button>
+          </div>
+        </section>
+
+        <!-- TAB: Spacing -->
+        <section id="tab-spacing" class="sg__panel">
+          <!-- Spacing -->
+          <h1 class="sg__title">Spacing</h1>
+          <div class="sg-section sg-section--card">
+            <div class="spacing">
+              <div class="spacing__item spacing__item--8">8pts</div>
+              <div class="spacing__item spacing__item--16">16pts</div>
+              <div class="spacing__item spacing__item--24">24pts</div>
+              <div class="spacing__item spacing__item--32">32pts</div>
+              <div class="spacing__item spacing__item--40">40pts</div>
+              <div class="spacing__item spacing__item--48">48pts</div>
+              <div class="spacing__item spacing__item--56">56pts</div>
+              <div class="spacing__item spacing__item--64">64pts</div>
+              <div class="spacing__item spacing__item--72">72pts</div>
+              <div class="spacing__item spacing__item--80">80pts</div>
+              <div class="spacing__item spacing__item--88">88pts</div>
+              <div class="spacing__item spacing__item--96">96pts</div>
+              <div class="spacing__item spacing__item--104">104pts</div>
+            </div>
+            <p class="spacing__formula">Linear: y = x + 8</p>
+          </div>
+
+          <!-- Screen Grid -->
+          <h1 class="sg__title">Screen Grid</h1>
+          <div class="sg-section sg-section--card">
+            <table class="sg-table">
+              <thead>
+                <tr>
+                  <th>Screen width</th>
+                  <th>Layout columns</th>
+                  <th>Margin &amp; gutters</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Extra Large &gt; 1200px</td>
+                  <td>12</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <td>720 - 839 (Large tablet)</td>
+                  <td>8</td>
+                  <td>24</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- TAB: Variants -->
+        <section id="tab-variants" class="sg__panel">
+          <h1 class="sg__title">Variants</h1>
+
+          <div class="sg-section sg-section--card"></div>
+        </section>
+
+        <!-- TAB: Components -->
+        <section id="tab-components" class="sg__panel"></section>
+      </main>
+    </div>
+
+    <script>
+      // Tab switching
+      (function () {
+        const items = document.querySelectorAll(".sg__nav-item");
+        const panels = document.querySelectorAll(".sg__panel");
+
+        function clearActive() {
+          items.forEach((i) => i.classList.remove("sg__nav-item--active"));
+          panels.forEach((p) => p.classList.remove("sg__panel--active"));
+        }
+
+        items.forEach((item) => {
+          item.addEventListener("click", () => {
+            const id = item.dataset.tab;
+            clearActive();
+            item.classList.add("sg__nav-item--active");
+            document.getElementById(id).classList.add("sg__panel--active");
+            // scroll top of content
+            document.querySelector(".sg__content").scrollTop = 0;
+          });
+        });
+      })();
+
+      // Simple tooltip behaviour (demo)
+      (function () {
+        const btn = document.querySelector(".tooltip-demo button[data-tip]");
+        const tip = document.querySelector(".tooltip");
+        if (!btn || !tip) return;
+        btn.addEventListener("mouseenter", () => {
+          tip.classList.add("tooltip--show");
+          const rect = btn.getBoundingClientRect();
+          tip.style.top = rect.top + window.scrollY - 10 + "px";
+          tip.style.left =
+            rect.left +
+            window.scrollX +
+            rect.width / 2 -
+            tip.offsetWidth / 2 +
+            "px";
+        });
+        btn.addEventListener("mouseleave", () =>
+          tip.classList.remove("tooltip--show")
+        );
+      })();
+
+      // Modal
+      (function () {
+        const openBtn = document.getElementById("openModalBtn");
+        const modal = document.getElementById("demoModal");
+        const closeBtn = document.getElementById("closeModalBtn");
+        const backdrop = document.getElementById("modalBackdrop");
+
+        function open() {
+          modal.classList.add("modal--open");
+          modal.setAttribute("aria-hidden", "false");
+        }
+        function close() {
+          modal.classList.remove("modal--open");
+          modal.setAttribute("aria-hidden", "true");
+        }
+        openBtn && openBtn.addEventListener("click", open);
+        closeBtn && closeBtn.addEventListener("click", close);
+        backdrop && backdrop.addEventListener("click", close);
+
+        // ESC to close
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && modal.classList.contains("modal--open"))
+            close();
+        });
+      })();
+    </script>
+  </body>
+</html>

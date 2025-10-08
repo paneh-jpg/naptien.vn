@@ -1,0 +1,117 @@
+@use "../abstracts";
+
+.dropdown {
+  display: none;
+  transform-origin: top left;
+  position: absolute;
+  padding-top: 21px;
+
+  left: 0;
+  right: 0;
+
+  &__inner {
+    background: #fff;
+    padding: 39px 100px 49px 48px;
+    height: min(400px, calc(100vh - 222px));
+    @include abstracts.screen(xl) {
+      padding: 30px;
+    }
+    @include abstracts.screen(lg) {
+      padding: 30px 0;
+    }
+  }
+}
+
+.top-menu {
+  height: 100%;
+  position: relative;
+
+  &__main {
+    height: 100%;
+    width: 315px;
+    @include abstracts.screen(xl) {
+      width: 230px;
+    }
+
+    @include abstracts.screen(lg) {
+      width: 200px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+  }
+
+  &__item {
+    padding: 8px 12px;
+
+    &--active .sub-menu {
+      display: block;
+    }
+
+    &:hover {
+      background: #f2f2f2;
+    }
+
+    &:hover .top-menu__narrow {
+      filter: brightness(0) saturate(100%) invert(47%) sepia(73%)
+        saturate(2900%) hue-rotate(345deg) brightness(94%) contrast(98%);
+    }
+
+    &:hover .sub-menu {
+      display: block;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #323232;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 155.556%;
+    @include abstracts.screen(xl) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.sub-menu {
+  position: absolute;
+  inset: 0 0 0 407px;
+  display: none;
+  @include abstracts.screen(xl) {
+    inset: 0 0 0 280px;
+  }
+
+  @include abstracts.screen(lg) {
+    inset: 0 0 0 220px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 71px;
+
+    @include abstracts.screen(lg) {
+      gap: 29px;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: #323232;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 11px 0;
+
+    &:hover {
+      background: #f2f2f2;
+    }
+  }
+}

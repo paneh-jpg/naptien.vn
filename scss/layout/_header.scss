@@ -1,0 +1,245 @@
+@use "../abstracts";
+
+.header__top {
+  color: #fff;
+  background: var(--color-primary);
+  font-family: Quicksand, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 128.571%;
+  display: flex;
+  align-items: center;
+
+  @include abstracts.screen(md) {
+    height: 58px;
+  }
+
+  &-inner {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+  }
+
+  &-right {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+  }
+
+  &-right,
+  &-left {
+    @include abstracts.screen(md) {
+      display: none;
+    }
+  }
+
+  &-lang-list {
+    display: none;
+  }
+}
+
+.header {
+  &__account {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+.help-center {
+  position: relative;
+  display: inline-block;
+}
+
+.help-center__toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.help-center__dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  min-width: 220px;
+  padding: 8px 0;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s;
+  z-index: 1000;
+}
+
+.help-center__dropdown--active {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.help-center__item a {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  text-decoration: none;
+}
+.help-center__item a:hover {
+  background: #f7f7f7;
+  color: #e65c2a;
+}
+
+.header__lang {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.header__lang-current {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header__lang-list {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  min-width: 120px;
+  padding: 6px 0;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  display: none;
+  z-index: 1000;
+}
+
+.header__lang-list--active {
+  display: block;
+}
+
+.header__lang-item {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+}
+.header__lang-item:hover {
+  background: #f5f5f5;
+  color: #e65c2a;
+}
+
+.header__top-2 {
+  background: #fff4f1;
+  padding: 24.37px 0;
+}
+
+.header__top-inner-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__top-3 {
+  background: #fff;
+  box-shadow: 0 4.206px 11.25px 0 rgba(244, 244, 244, 0.5);
+  padding: 18.1px 0 19.7px 0;
+
+  @include abstracts.screen(md) {
+    box-shadow: none;
+    border-bottom: 1px solid #f2f2f2;
+  }
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  &__list {
+    display: flex;
+    margin-left: -10px;
+  }
+
+  &__item {
+    &:hover .dropdown {
+      display: block;
+    }
+  }
+
+  &__link {
+    color: #404040;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14.72px;
+    font-weight: 500;
+    padding: 23px 10px;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  &__narrow {
+    padding-left: 3px;
+    filter: brightness(0) saturate(100%) invert(45%) sepia(0%) saturate(1203%)
+      hue-rotate(214deg) brightness(103%) contrast(90%);
+  }
+
+  &__hotline {
+    display: flex;
+    align-items: center;
+    gap: 8.41px;
+    color: #5c5c5c;
+    font-family: "Quicksand", sans-serif;
+    font-size: 14.72px;
+    font-weight: 600;
+    justify-content: flex-end;
+    @include abstracts.screen(md) {
+      position: fixed;
+      right: var(--space-x-md);
+      top: 20px;
+      filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%)
+        hue-rotate(120deg) brightness(107%) contrast(101%);
+    }
+
+    @include abstracts.screen(sm) {
+      font-size: 1.2rem;
+      right: calc(var(--grid-gutter-x) * 0.5);
+      gap: 6px;
+    }
+
+    &-icon {
+      @include abstracts.screen(sm) {
+        width: 12px;
+      }
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    z-index: -1;
+    inset: 26% 0 0 0;
+    background: #909090;
+    mix-blend-mode: lighten;
+    opacity: 0.1;
+  }
+}
+
+.mobile-search-icon {
+  margin-left: 6px;
+}
+
+.toggle-menu-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

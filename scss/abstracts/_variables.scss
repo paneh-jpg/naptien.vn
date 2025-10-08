@@ -1,0 +1,113 @@
+:root {
+  /* =======================
+     Primary
+  ======================= */
+  --color-primary: #ed5a25;
+
+  /* =======================
+     Secondary
+  ======================= */
+  --color-secondary-1: #782000;
+  --color-secondary-2: #8c2500;
+  --color-secondary-3: #aa2e02;
+  --color-secondary-4: #c53d0c;
+  --color-secondary-5: #dc4d1a;
+  --color-secondary-6: var(--color-primary);
+  --color-secondary-7: #ff6f3b;
+  --color-secondary-8: #ff7f50;
+  --color-secondary-9: #ff9e7b;
+  --color-secondary-10: #ffb59b;
+  --color-secondary-11: #ffcebc;
+  --color-secondary-12: #ffdbce;
+  --color-secondary-13: #fff4f1;
+
+  /* =======================
+     Tertiary (Chart)
+  ======================= */
+  --color-chart-1: #c9e9e6;
+  --color-chart-2: #a6d8c0;
+  --color-chart-3: #9dd29c;
+  --color-chart-4: #acd58a;
+  --color-chart-5: #c6de89;
+  --color-chart-6: #e5ea87;
+  --color-chart-7: #fff685;
+  --color-chart-8: #ffdd7f;
+  --color-chart-9: #ffce7b;
+  --color-chart-10: #fbb273;
+  --color-chart-11: #f69788;
+  --color-chart-12: #f3869b;
+
+  /* =======================
+     Status
+  ======================= */
+  --color-success-1: #00d800;
+  --color-success-2: #63c29d;
+  --color-success-3: #6ac17b;
+
+  --color-warning-1: #fcf6ea;
+  --color-warning-2: #fdd790;
+  --color-warning-3: #ffba4a;
+
+  --color-danger-1: #feebe7;
+  --color-danger-2: #ff5048;
+  --color-danger-3: #ee0033;
+
+  /* =======================
+     Greys
+  ======================= */
+  --grey-1: #fafafa;
+  --grey-2: #f2f2f2;
+  --grey-3: #e1e1e1;
+  --grey-4: #c8c8c8;
+  --grey-5: #b5b4b4;
+  --grey-6: #44494d;
+  --grey-7: #000000;
+
+  /* =======================
+     Dark Opacities
+  ======================= */
+  --dark-opacity-1: rgba(0, 0, 0, 0.05);
+  --dark-opacity-2: rgba(0, 0, 0, 0.1);
+  --dark-opacity-3: rgba(0, 0, 0, 0.2);
+  --dark-opacity-4: rgba(0, 0, 0, 0.4);
+  --dark-opacity-5: rgba(0, 0, 0, 0.8);
+
+  /* =======================
+     Background
+  ======================= */
+  --bg-primary: #f2f2f2;
+  --bg-secondary: #edf1f8;
+  --bg-tertiary: #f7f8fa;
+
+  /* =======================
+     Shadow
+  ======================= */
+  --shadow-soft: 1px 7px 10px 0 rgba(254, 254, 254, 0.25);
+  --shadow-medium: 2px 7px 10px 0 rgba(232, 236, 238, 0.5);
+  --shadow-strong: 4px 5px 18px 0 rgba(212, 212, 212, 0.4);
+
+  /* =======================
+     Color Text
+  ======================= */
+  --color-text-1: #afafaf;
+  --color-text-2: #969696;
+  --color-text-3: #4b4b4b;
+  --color-text-4: #323232;
+  --color-text-5: #191919;
+
+  /* =======================
+     UI Element Chart - 12 colors
+  ======================= */
+  --ui-chart-1: #c9e9e6;
+  --ui-chart-2: #a6d8c0;
+  --ui-chart-3: #9dd29c;
+  --ui-chart-4: #acd58a;
+  --ui-chart-5: #ffdd7f;
+  --ui-chart-6: #ffce7b;
+  --ui-chart-7: #fbb273;
+  --ui-chart-8: #f69788;
+  --ui-chart-9: #f3869b;
+  --ui-chart-10: #fafafa;
+  --ui-chart-11: #f2f2f2;
+  --ui-chart-12: #e1e1e1;
+}

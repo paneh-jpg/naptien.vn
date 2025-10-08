@@ -1,0 +1,58 @@
+/* ========== Alert Demo ========== */
+.alert-demo__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+/* ========== Alert Base ========== */
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  border: 1px solid transparent;
+  min-width: 460px;
+}
+
+.alert__icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.alert__text {
+  padding-right: 25px;
+  flex: 1;
+  margin: 0;
+}
+
+.alert__close {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+/* ========== Variants ========== */
+.alert--danger {
+  background: #fef2f2;
+  border-color: #fca5a5;
+  color: #b91c1c;
+}
+
+.alert--success {
+  background: #ecfdf5;
+  border-color: #6ee7b7;
+  color: #047857;
+}
+
+.alert--warning {
+  background: #fffbeb;
+  border-color: #fcd34d;
+  color: #b45309;
+}

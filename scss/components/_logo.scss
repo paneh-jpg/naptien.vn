@@ -1,0 +1,32 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &_icon {
+    width: 46.263px;
+    height: 46.263px;
+
+    border-radius: 50%;
+    flex-shrink: 0;
+
+    background: linear-gradient(
+      to bottom,
+      #e65c2a 0%,
+      #e65c2a 50%,
+      #000 50%,
+      #000 100%
+    );
+  }
+
+  &__text {
+    color: var(--color-primary);
+    font-size: 32.384px;
+    font-weight: 600;
+    line-height: 142.857%;
+
+    &-1 {
+      color: #404040;
+    }
+  }
+}

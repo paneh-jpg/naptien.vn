@@ -1,0 +1,124 @@
+/* ========== Tooltip Demo Wrapper ========== */
+.tooltip-demo {
+  margin-bottom: 2rem;
+}
+
+.tooltip-demo__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tooltip-demo__group {
+  margin-top: 20px;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ========== Tooltip Base ========== */
+.tooltip {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 0.3rem 0.55rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-size: 1.4rem;
+  color: #2a2a2a;
+  text-align: center;
+
+  width: 56px;
+  height: 34px;
+
+  &__list {
+    display: flex;
+    gap: 200px;
+  }
+}
+
+/* Text tooltip */
+.tooltip__text {
+  font-size: 0.875rem;
+  color: #1f2937;
+}
+
+/* ========== Tooltip Variants (Analytics) ========== */
+.tooltip--analytics {
+  width: 107px;
+  height: 64.964px;
+  padding: 0.75rem 1rem;
+}
+
+.tooltip__date {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.25rem;
+}
+
+.tooltip__value {
+  width: 100%;
+  font-size: 1.4rem;
+  color: #082150;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+}
+
+.tooltip__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981; /* xanh ngọc */
+  display: inline-block;
+}
+
+/* ========== Tooltip Arrow ========== */
+.tooltip::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/* bottom arrow (default) */
+.tooltip::after {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0 6px;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* top arrow */
+.tooltip--top::after {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #fff transparent;
+}
+
+/* right arrow */
+.tooltip--right::after {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent #fff;
+}
+
+/* left arrow */
+.tooltip--left::after {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 6px 6px 6px 0;
+  border-color: transparent #fff transparent transparent;
+}
