@@ -27,17 +27,28 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Animated CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- Scripts -->
     <script src="./assets/js/scripts.js"></script>
   </head>
   <body>
+    <!-- Header  -->
     <header id="header"></header>
     <script>
-      // Định nghĩa helper nếu chưa có
       if (typeof $ === "undefined") {
         const $ = (sel, ctx = document) => ctx.querySelector(sel);
         const $$ = (sel, ctx = document) =>
@@ -45,36 +56,3622 @@
         window.$ = $;
         window.$$ = $$;
       }
-
-      // Nạp header
       load("#header", "./templates/header.html", () => {
-        // Sau khi header load xong, khởi tạo dropdown & toggle
         initTopMenuDropdown();
         initJsToggle();
       });
     </script>
 
-    <div class="container">
-      <main style="margin-top: 100px">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-          dolore quo aperiam fugit maxime rerum, est dolor, omnis obcaecati quae
-          veniam earum? At vel dolor nemo repudiandae nisi tempore obcaecati
-          alias, eum autem soluta eligendi mollitia porro excepturi cumque, cum
-          dicta, odio quos reprehenderit. Laboriosam tempore architecto ipsum
-          libero provident nisi dolor ut impedit expedita alias ex vero, nostrum
-          necessitatibus voluptatum dolorum ullam non maiores quod reiciendis,
-          fuga voluptate! Ad porro amet blanditiis, molestias nemo laborum
-          officiis neque repellendus consequatur id modi, reiciendis sapiente
-          exercitationem voluptatum voluptatibus ratione culpa praesentium!
-          Aliquam, omnis sequi quisquam non quasi odio ipsa a commodi.
-        </p>
-      </main>
+    <!-- MAIN  -->
+    <main class="container home" style="height: 5000px">
+      <!-- Hero  -->
+      <section class="hero">
+        <div class="hero__inner">
+          <div class="hero__media">
+            <img
+              src="./assets/img/hero/hero-character-02.png"
+              alt=""
+              class="hero__character hero__character-02"
+            />
+            <div class="hero__circle-bg">
+              <img
+                src="./assets/img/hero/hero-character.png"
+                alt=""
+                class="hero__character"
+              />
+            </div>
+            <div class="hero__gift-wrap">
+              <img
+                src="./assets/img/hero/hero-gift-01.png"
+                alt=""
+                class="hero__gift hero__gift-1 element"
+              />
+              <img
+                src="./assets/img/hero/hero-gift-02.png"
+                alt=""
+                class="hero__gift hero__gift-2 element"
+              />
+            </div>
+            <div class="hero-card-1">
+              <h3 class="hero-card-1__title">BRAWLHALLA</h3>
+              <p class="hero-card-1__brand">SUPERSTAR</p>
+              <p class="hero-card-1__desc">EDITOR</p>
+              <div class="hero-card-1__img-wrap">
+                <img
+                  src="./assets/img/hero/card-1.1.png"
+                  class="hero-card-1__img"
+                  alt=""
+                />
+                <img
+                  src="./assets/img/hero/card-1.2.png"
+                  class="hero-card-1__img"
+                  alt=""
+                />
+              </div>
+              <p class="hero-card-1__name">EBAY USD GIFT CARD</p>
+              <div class="hero-card-1__bottom">
+                <div class="hero-card-1__info">
+                  <div class="hero-card-1__row">
+                    <img
+                      src="./assets/icon/star-mini.svg"
+                      alt=""
+                      class="hero-card-1__icon"
+                    />
+                    <p class="hero-card-1__value">4.8</p>
+                  </div>
+                  <div class="hero-card-1__row">
+                    <img
+                      src="./assets/icon/eye-mini.svg"
+                      alt=""
+                      class="hero-card-1__icon"
+                    />
+                    <p class="hero-card-1__value">120.9</p>
+                  </div>
+                </div>
+                <button class="hero-card-1__btn">
+                  <img src="./assets/icon/arrow-right.svg" alt="" />
+                </button>
+              </div>
+            </div>
 
-      <footer id="footer"></footer>
-      <script>
-        load("#footer", "./templates/footer.html");
-      </script>
-    </div>
+            <div class="hero-card-2">
+              <div class="hero-card-2__top">
+                <h3 class="hero-card-2__title">FORTNITE</h3>
+                <img
+                  src="./assets/img/hero/card-2.png"
+                  alt=""
+                  class="hero-card-2__img"
+                />
+              </div>
+              <p class="hero-card-1__name hero-card-2__name">Fortnite card</p>
+              <div class="hero-card-1__bottom hero-card-2__bottom">
+                <div class="hero-card-1__info">
+                  <div class="hero-card-1__row">
+                    <img
+                      src="./assets/icon/star-mini.svg"
+                      alt=""
+                      class="hero-card-1__icon"
+                    />
+                    <p class="hero-card-1__value">4.8</p>
+                  </div>
+                  <div class="hero-card-1__row">
+                    <img
+                      src="./assets/icon/eye-mini.svg"
+                      alt=""
+                      class="hero-card-1__icon"
+                    />
+                    <p class="hero-card-1__value">120.9</p>
+                  </div>
+                </div>
+                <button class="hero-card-1__btn">
+                  <img src="./assets/icon/arrow-right.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="feature">
+        <div class="feature__list">
+          <!-- Feature 1 -->
+          <div class="feature__item">
+            <div class="feature__icon-wrap">
+              <img
+                src="./assets/icon/feature-1.svg"
+                alt=""
+                class="feature__icon"
+              />
+            </div>
+            <p class="feature__desc">Nạp rút nhanh chóng</p>
+          </div>
+          <!-- Feature 2 -->
+          <div class="feature__item">
+            <div class="feature__icon-wrap">
+              <img
+                src="./assets/icon/feature-2.svg"
+                alt=""
+                class="feature__icon"
+              />
+            </div>
+            <p class="feature__desc">Giảm giá sâu</p>
+          </div>
+          <!-- Feature 3 -->
+          <div class="feature__item">
+            <div class="feature__icon-wrap">
+              <img
+                src="./assets/icon/feature-3.svg"
+                alt=""
+                class="feature__icon"
+              />
+            </div>
+            <p class="feature__desc">Hoàn tiền</p>
+          </div>
+          <!-- Feature 4 -->
+          <div class="feature__item">
+            <div class="feature__icon-wrap">
+              <img
+                src="./assets/icon/feature-4.svg"
+                alt=""
+                class="feature__icon"
+              />
+            </div>
+            <p class="feature__desc">Bảo mật</p>
+          </div>
+          <!-- Feature 5 -->
+          <div class="feature__item">
+            <div class="feature__icon-wrap">
+              <img
+                src="./assets/icon/feature-5.svg"
+                alt=""
+                class="feature__icon"
+              />
+            </div>
+            <p class="feature__desc">Uy tín</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Promotion Media  -->
+      <section class="promotion">
+        <div class="row row-cols-2 row-cols-lg-1">
+          <div class="col">
+            <div class="promotion-card">
+              <img
+                src="./assets/img/promotion/promote-1.svg"
+                alt=""
+                class="promotion__decor"
+              />
+              <img
+                src="./assets/img/promotion/card-main-img-1.svg"
+                alt=""
+                class="promotion__main-img promotion__main-img-1"
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="promotion-card">
+              <img
+                src="./assets/img/promotion/promote-2.svg"
+                alt=""
+                class="promotion__decor promotion__decor-2"
+              />
+              <img
+                src="./assets/img/promotion/card-main-img-2.svg"
+                alt=""
+                class="promotion__main-img promotion__main-img-2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Card  -->
+      <section class="product-card">
+        <!-- Product card Tabs -->
+        <ul class="product-card__tabs">
+          <!-- Tab 1 -->
+          <li class="product-card__tab product-card__tab--current">
+            Hôm nay có gì
+          </li>
+          <!-- Tab 2 -->
+          <li class="product-card__tab">Gợi ý cho bạn</li>
+          <!-- Tab 3 -->
+          <li class="product-card__tab">Sản phẩm nổi bật</li>
+          <!-- Tab 4 -->
+          <li class="product-card__tab">Mới cập nhật</li>
+          <!-- Tab 5 -->
+          <li class="product-card__tab">Có thể bạn thích</li>
+        </ul>
+
+        <!-- Product card Lists  -->
+        <div class="product-card__lists">
+          <div class="product-card__list product-card__list--current">
+            <div class="row row-cols-5 gx-24 gy-24">
+              <!-- Product 1 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-1.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 2 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-2.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      checked
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 3 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-3.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 4 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-4.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 5 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-5.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 6 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-6.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 7 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-7.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 8 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-8.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 9 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-9.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 10 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-10.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card__list">
+            <div class="row row-cols-5 gx-24 gy-24">
+              <!-- Product 1 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-10.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      checked
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 2 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-9.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 3 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-8.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 4 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-7.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 5 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-6.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 6 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-5.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 7 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-4.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 8 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-3.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 9 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-2.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      checked
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 10 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-1.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      checked
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card__list">
+            <div class="row row-cols-5 gx-24 gy-24">
+              <!-- Product 1 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-1.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 2 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-2.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 3 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-3.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 4 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-4.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 5 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-5.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 6 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-6.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 7 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-7.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 8 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-8.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 9 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-9.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 10 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-10.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card__list">
+            <div class="row row-cols-5 gx-24 gy-24">
+              <!-- Product 1 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-10.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 2 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-9.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 3 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-8.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 4 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-7.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 5 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-6.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 6 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-5.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 7 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-4.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 8 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-3.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 9 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-2.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 10 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-1.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card__list">
+            <div class="row row-cols-5 gx-24 gy-24">
+              <!-- Product 1 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-1.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 2 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-2.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 3 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-3.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 4 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-4.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 5 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-5.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 6 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-6.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 7 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-7.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 8 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-8.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 9 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-9.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+              <!-- Product 10 -->
+              <div class="col">
+                <div class="product-item">
+                  <div class="product-item__img-wrap">
+                    <img
+                      src="./assets/img/product/product-img-10.png"
+                      alt=""
+                      class="product-item__img"
+                    />
+                  </div>
+                  <label class="product-item__like">
+                    <input
+                      type="checkbox"
+                      class="product-item__like-checkbox"
+                      hidden
+                    />
+                    <img
+                      src="./assets/icon/black-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--off"
+                    />
+                    <img
+                      src="./assets/icon/red-heart.svg"
+                      alt=""
+                      class="product-item__like-icon product-item__like--on"
+                    />
+                  </label>
+                  <p class="product-item__name">
+                    Target Gift Card 50$ (US)- Order
+                  </p>
+                  <p class="product-item__price">120.000 ~ 134.000</p>
+                  <a
+                    href="#!"
+                    class="btn-secondary btn-rounded product-item__btn"
+                  >
+                    <img
+                      src="./assets/icon/cart.svg"
+                      alt=""
+                      class="product-card__cart-icon"
+                    />
+                    Mua ngay</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="product-card__view-all-btn btn btn-rounded btn-outline">
+          Xem tất cả
+        </button>
+      </section>
+
+      <!-- Gift Card  -->
+      <section class="gift-card">
+        <div class="gift-card__content">
+          <img
+            src="./assets/img/gift/gift-decor-1.svg"
+            alt=""
+            class="gift-card__decor gift-card__decor-1"
+          />
+          <img
+            src="./assets/img/gift/gift-decor-2.svg"
+            alt=""
+            class="gift-card__decor gift-card__decor-2"
+          />
+          <img
+            src="./assets/img/gift/gift-decor-3.svg"
+            alt=""
+            class="gift-card__decor gift-card__decor-3"
+          />
+
+          <h3 class="gift-card__title">Top Seller Gift Card</h3>
+          <p class="gift-card__desc">
+            Don't miss our limited-time offers! Discover current deals today!
+          </p>
+          <a href="#!" class="btn btn-outline btn-rounded gift-card__btn">
+            View all
+            <span>
+              <img
+                src="./assets/icon/arrow-right-orange.svg"
+                alt=""
+                class="gift-card__btn-icon"
+              />
+            </span>
+          </a>
+        </div>
+        <div class="gift-card__media">
+          <img
+            src="./assets/img/gift/gift-main-img.png"
+            alt=""
+            class="gift-card__main-img"
+          />
+        </div>
+      </section>
+
+      <!-- Product Category  -->
+      <section class="product-cate">
+        <div class="section__top">
+          <h2 class="section__heading">Sản phẩm theo danh mục</h2>
+          <div class="section__right">
+            <p class="section__desc">Tất cả danh mục</p>
+            <div class="section__btn-wrap">
+              <button class="section__btn-prev section__btn">
+                <img
+                  src="./assets/icon/arrow-left-orange.svg"
+                  alt=""
+                  class="section__btn-icon"
+                />
+              </button>
+              <button class="section__btn-next section__btn">
+                <img
+                  src="./assets/icon/arrow-right-orange-md.svg"
+                  alt=""
+                  class="section__btn-icon"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Promotion  -->
+        <div class="promotion product-cate__promotion">
+          <div class="row row-cols-2 row-cols-lg-1">
+            <div class="col">
+              <div class="promotion-card">
+                <img
+                  src="./assets/img/promotion/promote-11.svg"
+                  alt=""
+                  class="promotion__decor"
+                />
+                <img
+                  src="./assets/img/promotion/card-main-img-3.svg"
+                  alt=""
+                  class="promotion__main-img promotion__main-img-1"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="promotion-card">
+                <img
+                  src="./assets/img/promotion/promote-1.svg"
+                  alt=""
+                  class="promotion__decor"
+                />
+                <img
+                  src="./assets/img/promotion/card-main-img-4.svg"
+                  alt=""
+                  class="promotion__main-img promotion__main-img-2"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product List  -->
+        <div class="product-card__items">
+          <div class="row row-cols-5 gx-24 gy-24">
+            <!-- Product 1 -->
+            <div class="col">
+              <div class="product-item">
+                <div class="product-item__img-wrap">
+                  <img
+                    src="./assets/img/product/product-img-11.png"
+                    alt=""
+                    class="product-item__img"
+                  />
+                </div>
+                <label class="product-item__like">
+                  <input
+                    type="checkbox"
+                    class="product-item__like-checkbox"
+                    hidden
+                  />
+                  <img
+                    src="./assets/icon/black-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--off"
+                  />
+                  <img
+                    src="./assets/icon/red-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--on"
+                  />
+                </label>
+                <p class="product-item__name">
+                  Target Gift Card 50$ (US)- Order
+                </p>
+                <p class="product-item__price">120.000 ~ 134.000</p>
+                <a
+                  href="#!"
+                  class="btn-secondary btn-rounded product-item__btn"
+                >
+                  <img
+                    src="./assets/icon/cart.svg"
+                    alt=""
+                    class="product-card__cart-icon"
+                  />
+                  Mua ngay</a
+                >
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col">
+              <div class="product-item">
+                <div class="product-item__img-wrap">
+                  <img
+                    src="./assets/img/product/product-img-12.png"
+                    alt=""
+                    class="product-item__img"
+                  />
+                </div>
+                <label class="product-item__like">
+                  <input
+                    type="checkbox"
+                    class="product-item__like-checkbox"
+                    hidden
+                  />
+                  <img
+                    src="./assets/icon/black-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--off"
+                  />
+                  <img
+                    src="./assets/icon/red-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--on"
+                  />
+                </label>
+                <p class="product-item__name">
+                  Target Gift Card 50$ (US)- Order
+                </p>
+                <p class="product-item__price">120.000 ~ 134.000</p>
+                <a
+                  href="#!"
+                  class="btn-secondary btn-rounded product-item__btn"
+                >
+                  <img
+                    src="./assets/icon/cart.svg"
+                    alt=""
+                    class="product-card__cart-icon"
+                  />
+                  Mua ngay</a
+                >
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col">
+              <div class="product-item">
+                <div class="product-item__img-wrap">
+                  <img
+                    src="./assets/img/product/product-img-13.png"
+                    alt=""
+                    class="product-item__img"
+                  />
+                </div>
+                <label class="product-item__like">
+                  <input
+                    type="checkbox"
+                    class="product-item__like-checkbox"
+                    hidden
+                  />
+                  <img
+                    src="./assets/icon/black-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--off"
+                  />
+                  <img
+                    src="./assets/icon/red-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--on"
+                  />
+                </label>
+                <p class="product-item__name">
+                  Target Gift Card 50$ (US)- Order
+                </p>
+                <p class="product-item__price">120.000 ~ 134.000</p>
+                <a
+                  href="#!"
+                  class="btn-secondary btn-rounded product-item__btn"
+                >
+                  <img
+                    src="./assets/icon/cart.svg"
+                    alt=""
+                    class="product-card__cart-icon"
+                  />
+                  Mua ngay</a
+                >
+              </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col">
+              <div class="product-item">
+                <div class="product-item__img-wrap">
+                  <img
+                    src="./assets/img/product/product-img-14.png"
+                    alt=""
+                    class="product-item__img"
+                  />
+                </div>
+                <label class="product-item__like">
+                  <input
+                    type="checkbox"
+                    class="product-item__like-checkbox"
+                    hidden
+                  />
+                  <img
+                    src="./assets/icon/black-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--off"
+                  />
+                  <img
+                    src="./assets/icon/red-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--on"
+                  />
+                </label>
+                <p class="product-item__name">
+                  Target Gift Card 50$ (US)- Order
+                </p>
+                <p class="product-item__price">120.000 ~ 134.000</p>
+                <a
+                  href="#!"
+                  class="btn-secondary btn-rounded product-item__btn"
+                >
+                  <img
+                    src="./assets/icon/cart.svg"
+                    alt=""
+                    class="product-card__cart-icon"
+                  />
+                  Mua ngay</a
+                >
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col">
+              <div class="product-item">
+                <div class="product-item__img-wrap">
+                  <img
+                    src="./assets/img/product/product-img-15.png"
+                    alt=""
+                    class="product-item__img"
+                  />
+                </div>
+                <label class="product-item__like">
+                  <input
+                    type="checkbox"
+                    class="product-item__like-checkbox"
+                    hidden
+                  />
+                  <img
+                    src="./assets/icon/black-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--off"
+                  />
+                  <img
+                    src="./assets/icon/red-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--on"
+                  />
+                </label>
+                <p class="product-item__name">
+                  Target Gift Card 50$ (US)- Order
+                </p>
+                <p class="product-item__price">120.000 ~ 134.000</p>
+                <a
+                  href="#!"
+                  class="btn-secondary btn-rounded product-item__btn"
+                >
+                  <img
+                    src="./assets/icon/cart.svg"
+                    alt=""
+                    class="product-card__cart-icon"
+                  />
+                  Mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="product-card__view-all-btn btn btn-rounded btn-outline">
+          Xem tất cả
+        </button>
+      </section>
+
+      <!-- Bestseller  -->
+      <section class="product-best">
+        <div class="section__top">
+          <h2 class="section__heading">Sản phẩm bán chạy</h2>
+          <div class="section__right">
+            <p class="section__desc">Tất cả danh mục</p>
+            <div class="section__btn-wrap">
+              <button class="section__btn-prev section__btn">
+                <img
+                  src="./assets/icon/arrow-left-orange.svg"
+                  alt=""
+                  class="section__btn-icon"
+                />
+              </button>
+              <button class="section__btn-next section__btn">
+                <img
+                  src="./assets/icon/arrow-right-orange-md.svg"
+                  alt=""
+                  class="section__btn-icon"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-best__inner">
+          <div class="row">
+            <div class="col-5">
+              <div class="product-best__media">
+                <div class="product-best__img-wrap">
+                  <img
+                    src="./assets/img/product/bestseller-decor.png"
+                    alt=""
+                    class="product-best__img"
+                  />
+                </div>
+                <h3 class="product-best__title">Card voucher hot news</h3>
+                <a
+                  href="#!"
+                  class="btn btn-outline btn-rounded gift-card__btn product-best__btn"
+                >
+                  View all
+                  <span>
+                    <img
+                      src="./assets/icon/arrow-right-orange.svg"
+                      alt=""
+                      class="gift-card__btn-icon"
+                    />
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="col-7">
+              <div class="row row-cols-3 gx-24">
+                <!-- Product 1 -->
+                <div class="col">
+                  <div class="product-item">
+                    <div class="product-item__img-wrap">
+                      <img
+                        src="./assets/img/product/product-img-9.png"
+                        alt=""
+                        class="product-item__img"
+                      />
+                    </div>
+                    <label class="product-item__like">
+                      <input
+                        type="checkbox"
+                        class="product-item__like-checkbox"
+                        hidden
+                      />
+                      <img
+                        src="./assets/icon/black-heart.svg"
+                        alt=""
+                        class="product-item__like-icon product-item__like--off"
+                      />
+                      <img
+                        src="./assets/icon/red-heart.svg"
+                        alt=""
+                        class="product-item__like-icon product-item__like--on"
+                      />
+                    </label>
+                    <p class="product-item__name">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-item__price">120.000 ~ 134.000</p>
+                    <a
+                      href="#!"
+                      class="btn-secondary btn-rounded product-item__btn"
+                    >
+                      <img
+                        src="./assets/icon/cart.svg"
+                        alt=""
+                        class="product-card__cart-icon"
+                      />
+                      Mua ngay</a
+                    >
+                  </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col">
+                  <div class="product-item">
+                    <div class="product-item__img-wrap">
+                      <img
+                        src="./assets/img/product/product-img-17.png"
+                        alt=""
+                        class="product-item__img"
+                      />
+                    </div>
+                    <label class="product-item__like">
+                      <input
+                        type="checkbox"
+                        class="product-item__like-checkbox"
+                        hidden
+                      />
+                      <img
+                        src="./assets/icon/black-heart.svg"
+                        alt=""
+                        class="product-item__like-icon product-item__like--off"
+                      />
+                      <img
+                        src="./assets/icon/red-heart.svg"
+                        alt=""
+                        class="product-item__like-icon product-item__like--on"
+                      />
+                    </label>
+                    <p class="product-item__name">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-item__price">120.000 ~ 134.000</p>
+                    <a
+                      href="#!"
+                      class="btn-secondary btn-rounded product-item__btn"
+                    >
+                      <img
+                        src="./assets/icon/cart.svg"
+                        alt=""
+                        class="product-card__cart-icon"
+                      />
+                      Mua ngay</a
+                    >
+                  </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col">
+                  <div class="product-item">
+                    <div class="product-item__img-wrap">
+                      <img
+                        src="./assets/img/product/product-img-10.png"
+                        alt=""
+                        class="product-item__img"
+                      />
+                    </div>
+                    <label class="product-item__like">
+                      <input
+                        type="checkbox"
+                        class="product-item__like-checkbox"
+                        hidden
+                      />
+                      <img
+                        src="./assets/icon/black-heart.svg"
+                        alt=""
+                        class="product-item__like-icon product-item__like--off"
+                      />
+                      <img
+                        src="./assets/icon/red-heart.svg"
+                        alt=""
+                        class="product-item__like-icon product-item__like--on"
+                      />
+                    </label>
+                    <p class="product-item__name">
+                      Target Gift Card 50$ (US)- Order
+                    </p>
+                    <p class="product-item__price">120.000 ~ 134.000</p>
+                    <a
+                      href="#!"
+                      class="btn-secondary btn-rounded product-item__btn"
+                    >
+                      <img
+                        src="./assets/icon/cart.svg"
+                        alt=""
+                        class="product-card__cart-icon"
+                      />
+                      Mua ngay</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product New  -->
+      <section class="product-new">
+        <div class="section__top">
+          <h2 class="section__heading">Sản phẩm mới nhất</h2>
+          <div class="section__right">
+            <p class="section__desc">Tất cả danh mục</p>
+            <div class="section__btn-wrap">
+              <button class="section__btn-prev section__btn">
+                <img
+                  src="./assets/icon/arrow-left-orange.svg"
+                  alt=""
+                  class="section__btn-icon"
+                />
+              </button>
+              <button class="section__btn-next section__btn">
+                <img
+                  src="./assets/icon/arrow-right-orange-md.svg"
+                  alt=""
+                  class="section__btn-icon"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-new__list">
+          <div class="row row-cols-5 gx-24 gy-24">
+            <!-- Product 1 -->
+            <div class="col">
+              <div class="product-item">
+                <div class="product-item__img-wrap">
+                  <img
+                    src="./assets/img/product/product-img-9.png"
+                    alt=""
+                    class="product-item__img"
+                  />
+                </div>
+                <label class="product-item__like">
+                  <input
+                    type="checkbox"
+                    class="product-item__like-checkbox"
+                    hidden
+                  />
+                  <img
+                    src="./assets/icon/black-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--off"
+                  />
+                  <img
+                    src="./assets/icon/red-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--on"
+                  />
+                </label>
+                <p class="product-item__name">
+                  Target Gift Card 50$ (US)- Order
+                </p>
+                <p class="product-item__price">120.000 ~ 134.000</p>
+                <a
+                  href="#!"
+                  class="btn-secondary btn-rounded product-item__btn"
+                >
+                  <img
+                    src="./assets/icon/cart.svg"
+                    alt=""
+                    class="product-card__cart-icon"
+                  />
+                  Mua ngay</a
+                >
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col">
+              <div class="product-item">
+                <div class="product-item__img-wrap">
+                  <img
+                    src="./assets/img/product/product-img-17.png"
+                    alt=""
+                    class="product-item__img"
+                  />
+                </div>
+                <label class="product-item__like">
+                  <input
+                    type="checkbox"
+                    class="product-item__like-checkbox"
+                    hidden
+                  />
+                  <img
+                    src="./assets/icon/black-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--off"
+                  />
+                  <img
+                    src="./assets/icon/red-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--on"
+                  />
+                </label>
+                <p class="product-item__name">
+                  Target Gift Card 50$ (US)- Order
+                </p>
+                <p class="product-item__price">120.000 ~ 134.000</p>
+                <a
+                  href="#!"
+                  class="btn-secondary btn-rounded product-item__btn"
+                >
+                  <img
+                    src="./assets/icon/cart.svg"
+                    alt=""
+                    class="product-card__cart-icon"
+                  />
+                  Mua ngay</a
+                >
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col">
+              <div class="product-item">
+                <div class="product-item__img-wrap">
+                  <img
+                    src="./assets/img/product/product-img-18.png"
+                    alt=""
+                    class="product-item__img"
+                  />
+                </div>
+                <label class="product-item__like">
+                  <input
+                    type="checkbox"
+                    class="product-item__like-checkbox"
+                    hidden
+                  />
+                  <img
+                    src="./assets/icon/black-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--off"
+                  />
+                  <img
+                    src="./assets/icon/red-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--on"
+                  />
+                </label>
+                <p class="product-item__name">
+                  Target Gift Card 50$ (US)- Order
+                </p>
+                <p class="product-item__price">120.000 ~ 134.000</p>
+                <a
+                  href="#!"
+                  class="btn-secondary btn-rounded product-item__btn"
+                >
+                  <img
+                    src="./assets/icon/cart.svg"
+                    alt=""
+                    class="product-card__cart-icon"
+                  />
+                  Mua ngay</a
+                >
+              </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="col">
+              <div class="product-item">
+                <div class="product-item__img-wrap">
+                  <img
+                    src="./assets/img/product/product-img-19.png"
+                    alt=""
+                    class="product-item__img"
+                  />
+                </div>
+                <label class="product-item__like">
+                  <input
+                    type="checkbox"
+                    class="product-item__like-checkbox"
+                    hidden
+                  />
+                  <img
+                    src="./assets/icon/black-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--off"
+                  />
+                  <img
+                    src="./assets/icon/red-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--on"
+                  />
+                </label>
+                <p class="product-item__name">
+                  Target Gift Card 50$ (US)- Order
+                </p>
+                <p class="product-item__price">120.000 ~ 134.000</p>
+                <a
+                  href="#!"
+                  class="btn-secondary btn-rounded product-item__btn"
+                >
+                  <img
+                    src="./assets/icon/cart.svg"
+                    alt=""
+                    class="product-card__cart-icon"
+                  />
+                  Mua ngay</a
+                >
+              </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col">
+              <div class="product-item">
+                <div class="product-item__img-wrap">
+                  <img
+                    src="./assets/img/product/product-img-20.png"
+                    alt=""
+                    class="product-item__img"
+                  />
+                </div>
+                <label class="product-item__like">
+                  <input
+                    type="checkbox"
+                    class="product-item__like-checkbox"
+                    hidden
+                  />
+                  <img
+                    src="./assets/icon/black-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--off"
+                  />
+                  <img
+                    src="./assets/icon/red-heart.svg"
+                    alt=""
+                    class="product-item__like-icon product-item__like--on"
+                  />
+                </label>
+                <p class="product-item__name">
+                  Target Gift Card 50$ (US)- Order
+                </p>
+                <p class="product-item__price">120.000 ~ 134.000</p>
+                <a
+                  href="#!"
+                  class="btn-secondary btn-rounded product-item__btn"
+                >
+                  <img
+                    src="./assets/icon/cart.svg"
+                    alt=""
+                    class="product-card__cart-icon"
+                  />
+                  Mua ngay</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-table">
+          <div class="row row-cols-3">
+            <div class="col">
+              <div class="product-table__inner">
+                <div class="product-table__top">
+                  <h4 class="product-table__title">Top Selling product</h4>
+                  <div class="section__btn-wrap">
+                    <button class="product-table__btn section__btn">
+                      <img
+                        src="./assets/icon/arrow-left-orange.svg"
+                        alt=""
+                        class="section__btn-icon"
+                      />
+                    </button>
+                    <button class="product-table__btn section__btn">
+                      <img
+                        src="./assets/icon/arrow-right-orange-md.svg"
+                        alt=""
+                        class="section__btn-icon"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <ul class="product-table__list">
+                  <li class="product-table__item">
+                    <img
+                      src="./assets/img/product/table-product-1.png"
+                      alt=""
+                      class="product-table__img"
+                    />
+                    <div class="product-table__content">
+                      <h5 class="product-table__name">
+                        Target Gift Card 50$ (US)
+                      </h5>
+                      <p class="product-table__price">120.000 ~ 134.000</p>
+                      <div class="product-table__bottom">
+                        <img
+                          src="./assets/icon/star-medium.svg"
+                          alt=""
+                          class="product-table__icon"
+                        />
+                        <p class="product-table__rate">
+                          4.8 <span>(120k)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-table__item">
+                    <img
+                      src="./assets/img/product/table-product-2.png"
+                      alt=""
+                      class="product-table__img"
+                    />
+                    <div class="product-table__content">
+                      <h5 class="product-table__name">
+                        Target Gift Card 50$ (US)
+                      </h5>
+                      <p class="product-table__price">120.000 ~ 134.000</p>
+                      <div class="product-table__bottom">
+                        <img
+                          src="./assets/icon/star-medium.svg"
+                          alt=""
+                          class="product-table__icon"
+                        />
+                        <p class="product-table__rate">
+                          4.8 <span>(120k)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-table__item">
+                    <img
+                      src="./assets/img/product/table-product-3.png"
+                      alt=""
+                      class="product-table__img"
+                    />
+                    <div class="product-table__content">
+                      <h5 class="product-table__name">
+                        Target Gift Card 50$ (US)
+                      </h5>
+                      <p class="product-table__price">120.000 ~ 134.000</p>
+                      <div class="product-table__bottom">
+                        <img
+                          src="./assets/icon/star-medium.svg"
+                          alt=""
+                          class="product-table__icon"
+                        />
+                        <p class="product-table__rate">
+                          4.8 <span>(120k)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-table__item">
+                    <img
+                      src="./assets/img/product/table-product-4.png"
+                      alt=""
+                      class="product-table__img"
+                    />
+                    <div class="product-table__content">
+                      <h5 class="product-table__name">
+                        Target Gift Card 50$ (US)
+                      </h5>
+                      <p class="product-table__price">120.000 ~ 134.000</p>
+                      <div class="product-table__bottom">
+                        <img
+                          src="./assets/icon/star-medium.svg"
+                          alt=""
+                          class="product-table__icon"
+                        />
+                        <p class="product-table__rate">
+                          4.8 <span>(120k)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-table__inner">
+                <div class="product-table__top">
+                  <h4 class="product-table__title">Top Selling product</h4>
+                  <div class="section__btn-wrap">
+                    <button class="product-table__btn section__btn">
+                      <img
+                        src="./assets/icon/arrow-left-orange.svg"
+                        alt=""
+                        class="section__btn-icon"
+                      />
+                    </button>
+                    <button class="product-table__btn section__btn">
+                      <img
+                        src="./assets/icon/arrow-right-orange-md.svg"
+                        alt=""
+                        class="section__btn-icon"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <ul class="product-table__list">
+                  <li class="product-table__item">
+                    <img
+                      src="./assets/img/product/table-product-1.png"
+                      alt=""
+                      class="product-table__img"
+                    />
+                    <div class="product-table__content">
+                      <h5 class="product-table__name">
+                        Target Gift Card 50$ (US)
+                      </h5>
+                      <p class="product-table__price">120.000 ~ 134.000</p>
+                      <div class="product-table__bottom">
+                        <img
+                          src="./assets/icon/star-medium.svg"
+                          alt=""
+                          class="product-table__icon"
+                        />
+                        <p class="product-table__rate">
+                          4.8 <span>(120k)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-table__item">
+                    <img
+                      src="./assets/img/product/table-product-2.png"
+                      alt=""
+                      class="product-table__img"
+                    />
+                    <div class="product-table__content">
+                      <h5 class="product-table__name">
+                        Target Gift Card 50$ (US)
+                      </h5>
+                      <p class="product-table__price">120.000 ~ 134.000</p>
+                      <div class="product-table__bottom">
+                        <img
+                          src="./assets/icon/star-medium.svg"
+                          alt=""
+                          class="product-table__icon"
+                        />
+                        <p class="product-table__rate">
+                          4.8 <span>(120k)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-table__item">
+                    <img
+                      src="./assets/img/product/table-product-3.png"
+                      alt=""
+                      class="product-table__img"
+                    />
+                    <div class="product-table__content">
+                      <h5 class="product-table__name">
+                        Target Gift Card 50$ (US)
+                      </h5>
+                      <p class="product-table__price">120.000 ~ 134.000</p>
+                      <div class="product-table__bottom">
+                        <img
+                          src="./assets/icon/star-medium.svg"
+                          alt=""
+                          class="product-table__icon"
+                        />
+                        <p class="product-table__rate">
+                          4.8 <span>(120k)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-table__item">
+                    <img
+                      src="./assets/img/product/table-product-4.png"
+                      alt=""
+                      class="product-table__img"
+                    />
+                    <div class="product-table__content">
+                      <h5 class="product-table__name">
+                        Target Gift Card 50$ (US)
+                      </h5>
+                      <p class="product-table__price">120.000 ~ 134.000</p>
+                      <div class="product-table__bottom">
+                        <img
+                          src="./assets/icon/star-medium.svg"
+                          alt=""
+                          class="product-table__icon"
+                        />
+                        <p class="product-table__rate">
+                          4.8 <span>(120k)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="product-table__inner">
+                <div class="product-table__top">
+                  <h4 class="product-table__title">Top Selling product</h4>
+                  <div class="section__btn-wrap">
+                    <button class="product-table__btn section__btn">
+                      <img
+                        src="./assets/icon/arrow-left-orange.svg"
+                        alt=""
+                        class="section__btn-icon"
+                      />
+                    </button>
+                    <button class="product-table__btn section__btn">
+                      <img
+                        src="./assets/icon/arrow-right-orange-md.svg"
+                        alt=""
+                        class="section__btn-icon"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <ul class="product-table__list">
+                  <li class="product-table__item">
+                    <img
+                      src="./assets/img/product/table-product-1.png"
+                      alt=""
+                      class="product-table__img"
+                    />
+                    <div class="product-table__content">
+                      <h5 class="product-table__name">
+                        Target Gift Card 50$ (US)
+                      </h5>
+                      <p class="product-table__price">120.000 ~ 134.000</p>
+                      <div class="product-table__bottom">
+                        <img
+                          src="./assets/icon/star-medium.svg"
+                          alt=""
+                          class="product-table__icon"
+                        />
+                        <p class="product-table__rate">
+                          4.8 <span>(120k)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-table__item">
+                    <img
+                      src="./assets/img/product/table-product-2.png"
+                      alt=""
+                      class="product-table__img"
+                    />
+                    <div class="product-table__content">
+                      <h5 class="product-table__name">
+                        Target Gift Card 50$ (US)
+                      </h5>
+                      <p class="product-table__price">120.000 ~ 134.000</p>
+                      <div class="product-table__bottom">
+                        <img
+                          src="./assets/icon/star-medium.svg"
+                          alt=""
+                          class="product-table__icon"
+                        />
+                        <p class="product-table__rate">
+                          4.8 <span>(120k)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-table__item">
+                    <img
+                      src="./assets/img/product/table-product-3.png"
+                      alt=""
+                      class="product-table__img"
+                    />
+                    <div class="product-table__content">
+                      <h5 class="product-table__name">
+                        Target Gift Card 50$ (US)
+                      </h5>
+                      <p class="product-table__price">120.000 ~ 134.000</p>
+                      <div class="product-table__bottom">
+                        <img
+                          src="./assets/icon/star-medium.svg"
+                          alt=""
+                          class="product-table__icon"
+                        />
+                        <p class="product-table__rate">
+                          4.8 <span>(120k)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product-table__item">
+                    <img
+                      src="./assets/img/product/table-product-4.png"
+                      alt=""
+                      class="product-table__img"
+                    />
+                    <div class="product-table__content">
+                      <h5 class="product-table__name">
+                        Target Gift Card 50$ (US)
+                      </h5>
+                      <p class="product-table__price">120.000 ~ 134.000</p>
+                      <div class="product-table__bottom">
+                        <img
+                          src="./assets/icon/star-medium.svg"
+                          alt=""
+                          class="product-table__icon"
+                        />
+                        <p class="product-table__rate">
+                          4.8 <span>(120k)</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News -->
+      <section class="news">
+        <div class="section__top">
+          <h2 class="section__heading">Tin tức & Khuyến mại</h2>
+          <div class="section__right">
+            <div class="section__btn-wrap">
+              <button class="news__btn section__btn">
+                <img
+                  src="./assets/icon/arrow-right-orange-md.svg"
+                  alt=""
+                  class="news__btn-icon section__btn-icon"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer  -->
+    <footer id="footer"></footer>
+    <script>
+      load("#footer", "./templates/footer.html");
+    </script>
   </body>
 </html>

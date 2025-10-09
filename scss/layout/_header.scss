@@ -151,6 +151,8 @@
   background: #fff;
   box-shadow: 0 4.206px 11.25px 0 rgba(244, 244, 244, 0.5);
   padding: 18.1px 0 19.7px 0;
+  position: relative;
+  z-index: 2;
 
   @include abstracts.screen(md) {
     box-shadow: none;
@@ -205,12 +207,11 @@
     opacity: 0;
     transition: opacity, visibility;
     transition-duration: 0.5s;
-
-    background: rgba($color: #000000, $alpha: 0.3);
+    background: rgba($color: #000000, $alpha: 0.4);
 
     position: fixed;
-    z-index: -1;
-    inset: 21.5% 0 0 0;
+
+    inset: 26% 0 0 0;
 
     // @include abstracts.screen(xl) {
     //   inset: 21% 0 0 0;

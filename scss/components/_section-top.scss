@@ -1,0 +1,54 @@
+.section {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__right {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__heading {
+    color: #323232;
+    font-family: "Quicksand";
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__desc {
+    color: #404040;
+    font-family: "Quicksand";
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 150%;
+  }
+
+  &__btn-wrap {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffece5;
+    transition: background, filter;
+    transition-duration: 0.5s;
+
+    &:hover {
+      background: var(--color-primary);
+    }
+
+    &:hover &-icon {
+      filter: brightness(0) saturate(100%) invert(100%) sepia(95%) saturate(0%)
+        hue-rotate(124deg) brightness(104%) contrast(104%);
+    }
+  }
+}

@@ -121,16 +121,13 @@
                 </p>
               </a>
             </div>
-
             <!-- Close button  -->
             <btn class="navbar__top-btn js-toggle" toggle-target="#navbar">
               <img src="./assets/icon/close-X.btn.svg" alt="" />
             </btn>
           </div>
-
           <!-- Separate  -->
           <div class="logo__separate d-none d-md-block"></div>
-
           <!-- Navbar List  -->
           <ul class="navbar__list js-dropdown-list">
             <li>
@@ -670,7 +667,7 @@
                 </div>
               </div>
             </li>
-            <div class="navbar__overlay d-md-none"></div>
+
             <li class="navbar__item">
               <a href="#!" class="navbar__link"
                 >Nạp game
@@ -1157,7 +1154,7 @@
                 </div>
               </div>
             </li>
-            <div class="navbar__overlay d-md-none"></div>
+            <div class="navbar__overlay navbar__overlay--pc d-md-none"></div>
           </ul>
         </nav>
 
@@ -1170,7 +1167,10 @@
           Hotline: 19200 10800</a
         >
 
-        <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
+        <div
+          class="navbar__overlay d-none d-md-block js-toggle"
+          toggle-target="#navbar"
+        ></div>
 
         <div class="mla d-none d-md-flex top-mobile-icon">
           <img src="./assets/icon/search2.svg" class="mobile-search-icon" />

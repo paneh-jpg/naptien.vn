@@ -1,0 +1,36 @@
+@use "../abstracts";
+
+.feature {
+  margin-top: 40px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1.2fr repeat(4, 1fr);
+    align-items: center;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff4f1;
+
+    margin-bottom: 12px;
+  }
+
+  &__desc {
+    color: #3e3e3e;
+    font-family: "Quicksand";
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 155.556%;
+  }
+}

@@ -1,0 +1,27 @@
+.promotion {
+  margin-top: 40px;
+  &-card {
+    position: relative;
+    border-radius: 30px;
+    background: #fff4f1;
+    height: 251px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 30px;
+    align-items: center;
+  }
+
+  &__decor {
+    position: absolute;
+
+    &-2 {
+      bottom: 0;
+    }
+  }
+
+  &__main-img {
+    position: relative;
+    z-index: 1;
+  }
+}

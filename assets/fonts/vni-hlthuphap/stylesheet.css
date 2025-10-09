@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'VNI-HLThuphap';
+    src: url('kimberley/VNI-HLThuphap.woff2') format('woff2'),
+        url('kimberley/VNI-HLThuphap.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

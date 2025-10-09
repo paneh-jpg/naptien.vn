@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Kimberley";
+  src: url("kimberley/Kimberley-Black.woff2") format("woff2"),
+    url("kimberley/Kimberley-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VNI-HLThuphap";
+  src: url("vni-hlthuphap/VNI-HLThuphap.woff2") format("woff2"),
+    url("vni-hlthuphap/VNI-HLThuphap.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Marujo";
+  src: url("marujo/SVN-Marujo.woff2") format("woff2"),
+    url("marujo/SVN-Marujo.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

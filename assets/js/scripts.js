@@ -376,3 +376,26 @@ document.addEventListener("DOMContentLoaded", initMobileSubmenus);
 window.addEventListener("resize", () => {
   initMobileSubmenus();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = document.querySelectorAll(".product-card__tab");
+  const lists = document.querySelectorAll(".product-card__list");
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      // Xóa class current ở tất cả tab
+      tabs.forEach((t) => t.classList.remove("product-card__tab--current"));
+      // Thêm class current cho tab được bấm
+      tab.classList.add("product-card__tab--current");
+
+      // Ẩn tất cả danh sách
+      lists.forEach((list) =>
+        list.classList.remove("product-card__list--current")
+      );
+      // Hiện danh sách tương ứng
+      if (lists[index]) {
+        lists[index].classList.add("product-card__list--current");
+      }
+    });
+  });
+});

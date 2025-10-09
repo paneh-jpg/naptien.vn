@@ -1,0 +1,261 @@
+@use "../abstracts";
+
+.hero {
+  &__inner {
+    position: relative;
+    background: #ffdbce;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding-right: 90px;
+    height: 426px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__media {
+    position: relative;
+  }
+
+  &__circle-bg {
+    position: relative;
+
+    width: 385px;
+    height: 385px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    border: 40px solid #ffdbce;
+    outline: 60.6px solid rgba(255, 213, 198, 1);
+    overflow: hidden;
+  }
+
+  &__gift-1,
+  &__gift-2 {
+    position: absolute;
+  }
+
+  &__gift-1 {
+    width: 81.142px;
+    height: 81.074px;
+
+    left: -8px;
+    top: 282px;
+  }
+
+  &__gift-2 {
+    width: 105.291px;
+    height: 105.203px;
+
+    left: 250px;
+    top: 60px;
+  }
+
+  &__character {
+    position: absolute;
+    left: 0;
+    top: 0;
+    left: -35px;
+    top: 8px;
+
+    &-02 {
+      z-index: 1;
+      left: 5px;
+      top: 47px;
+    }
+  }
+}
+
+.hero-card-1 {
+  position: absolute;
+  top: 28px;
+  left: -142px;
+  width: 143.821px;
+  height: 178.394px;
+  transform: rotate(-18.218deg);
+  border-radius: 17.42px;
+  background: #fff;
+  box-shadow: 0 21.234px 19.51px 0 rgba(255, 235, 230, 0.5);
+
+  border: 5px solid #fff4f1;
+
+  &__img {
+    width: 70.785px;
+    height: 70.748px;
+  }
+
+  &__img,
+  &__icon {
+    transform: rotate(18.218deg);
+  }
+
+  &__title {
+    color: var(--color-text-5);
+    font-family: "Kimberley";
+    margin-top: 11px;
+    text-align: center;
+    font-size: 13.321px;
+    font-weight: 400;
+    line-height: 83.017%;
+    letter-spacing: 0.932px;
+  }
+
+  &__brand {
+    padding: 12px 10px 0;
+    display: block;
+    font-family: "VNI-HLThuphap";
+    // margin-top: 10px;
+    text-align: center;
+    font-size: 9.114px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.857%;
+    letter-spacing: 1.823px;
+  }
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    &__brand {
+      color: transparent;
+
+      background-color: #333;
+      background-image: linear-gradient(90deg, #f42323 0%, #1d0fbf 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
+
+  &__desc {
+    color: var(--grey-6);
+    margin-top: -4px;
+    text-align: center;
+    font-family: "Quantico";
+    font-size: 5.161px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13.888px; /* 269.068% */
+    letter-spacing: 3.407px;
+  }
+
+  &__img-wrap {
+    margin-top: -5px;
+    display: flex;
+    img:first-child {
+      margin-left: 2.5px;
+    }
+
+    img:last-child {
+      margin-left: -13px;
+    }
+  }
+
+  &__name {
+    margin-top: 5px;
+    color: var(--color-text-5);
+    font-size: 8.71px;
+    font-weight: 600;
+    line-height: 160%;
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+
+  &__bottom {
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info {
+    display: flex;
+    gap: 6.45px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    gap: 3.48px;
+  }
+
+  &__value {
+    color: var(--color-text-5);
+    font-size: 5.807px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  &__btn {
+    width: 13.946px;
+    height: 13.937px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 7.791px;
+      height: 7.609px;
+    }
+  }
+}
+
+.hero-card-2 {
+  position: absolute;
+  right: 13px;
+  bottom: 39px;
+  width: 123.984px;
+  height: 136.98px;
+  transform: rotateZ(41deg) rotateX(50deg) rotateY(335deg)
+    translate3d(18px, 11px, 0);
+  // transform-style: preserve-3d;
+  border-radius: 13.323px;
+  background: #fff;
+  border: 5px solid #e2d3e9;
+  box-shadow: 0 9.992px 27px 0 rgba(238, 219, 214, 0.5);
+  padding: 6px;
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 9.992px 9.992px 0 0;
+    background: linear-gradient(
+        24deg,
+        rgba(133, 112, 153, 0.2) 6.11%,
+        rgba(133, 112, 153, 0) 17.93%
+      ),
+      linear-gradient(92deg, #89779f -1.41%, #a288ad 97.92%);
+
+    overflow: hidden;
+  }
+
+  &__name {
+    font-size: 6.662px;
+  }
+
+  &__bottom {
+    margin-top: 0;
+  }
+
+  &__title {
+    margin-top: 10px;
+    color: var(--Background-03, #f2f2f2);
+    text-align: center;
+    font-family: "SVN-Mauro";
+    font-size: 11.98px;
+    font-weight: 500;
+    line-height: 83.017%;
+    letter-spacing: 1.189px;
+  }
+
+  &__img {
+    margin-left: -10px;
+    width: 90.987px;
+    height: 61.992px;
+    transform: rotate(-45deg);
+  }
+}
