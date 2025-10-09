@@ -88,7 +88,7 @@
           </ul>
         </div>
         <div class="search-bar__separate"></div>
-        <div class="search-bar-right">
+        <div class="search-bar__right">
           <input type="text" class="search-bar__input" placeholder="Search" />
           <button class="search-bar__button">
             <img
@@ -106,13 +106,33 @@
   <div class="container">
     <div class="header__top-3-inner">
       <div class="toggle-menu-2">
-        <img
-          src="./assets/icon/toggle-menu.svg"
-          class="toggle-menu-icon-2 d-none d-md-block"
-          alt=""
-        />
-        <nav class="navbar">
-          <ul class="navbar__list js-dropdown-list d-md-none">
+        <button class="js-toggle d-none d-md-block" toggle-target="#navbar">
+          <img src="./assets/icon/toggle-menu.svg" class="toggle-menu-icon-2
+          alt="" />
+        </button>
+        <nav class="navbar hide" id="navbar">
+          <div class="navbar__top--mobile d-none d-md-flex">
+            <!-- Logo -->
+            <div class="logo logo-mobile">
+              <a href="/" class="logo">
+                <div class="logo_icon"></div>
+                <p class="logo__text">
+                  <span class="logo__text-1">Nap</span>Tien
+                </p>
+              </a>
+            </div>
+
+            <!-- Close button  -->
+            <btn class="navbar__top-btn js-toggle" toggle-target="#navbar">
+              <img src="./assets/icon/close-X.btn.svg" alt="" />
+            </btn>
+          </div>
+
+          <!-- Separate  -->
+          <div class="logo__separate d-none d-md-block"></div>
+
+          <!-- Navbar List  -->
+          <ul class="navbar__list js-dropdown-list">
             <li>
               <a href="#!" class="navbar__link">Trang chủ</a>
             </li>
@@ -125,7 +145,6 @@
                   class="navbar__narrow"
                 />
               </a>
-
               <div class="dropdown">
                 <div class="dropdown__inner">
                   <div class="top-menu">
@@ -651,6 +670,7 @@
                 </div>
               </div>
             </li>
+            <div class="navbar__overlay d-md-none"></div>
             <li class="navbar__item">
               <a href="#!" class="navbar__link"
                 >Nạp game
@@ -658,8 +678,8 @@
                   src="./assets/icon/arrow-down-grey.svg"
                   alt=""
                   class="navbar__narrow"
-              /></a>
-
+                />
+              </a>
               <div class="dropdown">
                 <div class="dropdown__inner">
                   <div class="top-menu">
@@ -1137,16 +1157,20 @@
                 </div>
               </div>
             </li>
+            <div class="navbar__overlay d-md-none"></div>
           </ul>
-          <a href="tel:19200 10800" class="navbar__hotline">
-            <img
-              src="./assets/icon/hotline-icon.svg"
-              alt=""
-              class="navbar__hotline-icon"
-            />
-            Hotline: 19200 10800</a
-          >
         </nav>
+
+        <a href="tel:19200 10800" class="navbar__hotline mla">
+          <img
+            src="./assets/icon/hotline-icon.svg"
+            alt=""
+            class="navbar__hotline-icon"
+          />
+          Hotline: 19200 10800</a
+        >
+
+        <div class="navbar__overlay js-toggle" toggle-target="#navbar"></div>
 
         <div class="mla d-none d-md-flex top-mobile-icon">
           <img src="./assets/icon/search2.svg" class="mobile-search-icon" />

@@ -156,23 +156,98 @@
     box-shadow: none;
     border-bottom: 1px solid #f2f2f2;
   }
+  &-inner {
+    position: relative;
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 .navbar {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 
+  @include abstracts.screen(md) {
+    flex-direction: column;
+    position: fixed;
+    width: 66%;
+    inset: 0 50% 0 0;
+    background: #fff;
+    z-index: 2;
+    align-items: flex-start;
+    justify-content: initial;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+
+    &.show {
+      transform: translateX(0);
+    }
+
+    &.show ~ .navbar__overlay {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__top--mobile {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28.27px 23px 0 27px;
+  }
+
+  &__overlay {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity, visibility;
+    transition-duration: 0.5s;
+
+    background: rgba($color: #000000, $alpha: 0.3);
+
+    position: fixed;
+    z-index: -1;
+    inset: 21.5% 0 0 0;
+
+    // @include abstracts.screen(xl) {
+    //   inset: 21% 0 0 0;
+    // }
+
+    @include abstracts.screen(md) {
+      inset: 0 0 0 0;
+      z-index: 1;
+    }
+  }
+
   &__list {
     display: flex;
     margin-left: -10px;
-  }
 
+    @include abstracts.screen(md) {
+      flex-direction: column;
+      width: 100%;
+      overflow: auto;
+      overscroll-behavior: contain;
+    }
+  }
   &__item {
     &:hover .dropdown {
       display: block;
+    }
+
+    &:hover ~ .navbar__overlay {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    @include abstracts.screen(md) {
+      &:hover .dropdown {
+        // display: none;
+      }
+      width: 100%;
     }
   }
 
@@ -185,6 +260,16 @@
 
     &:hover {
       color: var(--color-primary);
+    }
+
+    @include abstracts.screen(md) {
+      display: block;
+      padding: 14px 0px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 35px;
+      padding-right: 15px;
+      font-size: 1.672rem;
     }
   }
 
@@ -203,6 +288,7 @@
     font-size: 14.72px;
     font-weight: 600;
     justify-content: flex-end;
+    min-width: 220px;
     @include abstracts.screen(md) {
       position: fixed;
       right: var(--space-x-md);
@@ -222,15 +308,6 @@
         width: 12px;
       }
     }
-  }
-
-  &__overlay {
-    position: fixed;
-    z-index: -1;
-    inset: 26% 0 0 0;
-    background: #909090;
-    mix-blend-mode: lighten;
-    opacity: 0.1;
   }
 }
 

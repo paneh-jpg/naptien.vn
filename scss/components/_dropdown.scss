@@ -8,16 +8,28 @@
 
   left: 0;
   right: 0;
+  top: 15px;
+
+  @include abstracts.screen(md) {
+    position: static;
+    padding: 0 10px 0 27px;
+  }
 
   &__inner {
     background: #fff;
-    padding: 39px 100px 49px 48px;
+    padding: 39px 80px 49px 48px;
     height: min(400px, calc(100vh - 222px));
     @include abstracts.screen(xl) {
       padding: 30px;
     }
     @include abstracts.screen(lg) {
       padding: 30px 0;
+    }
+
+    @include abstracts.screen(md) {
+      height: auto;
+      overflow: auto;
+      padding: 0;
     }
   }
 }
@@ -36,12 +48,20 @@
     @include abstracts.screen(lg) {
       width: 200px;
     }
+
+    @include abstracts.screen(md) {
+      width: 100%;
+    }
   }
 
   &__list {
     display: flex;
     flex-direction: column;
     gap: 23px;
+    @include abstracts.screen(md) {
+      gap: 0;
+      margin-left: 10px;
+    }
   }
 
   &__item {
@@ -53,6 +73,9 @@
 
     &:hover {
       background: #f2f2f2;
+      @include abstracts.screen(md) {
+        background-color: #fff;
+      }
     }
 
     &:hover .top-menu__narrow {
@@ -93,12 +116,25 @@
     inset: 0 0 0 220px;
   }
 
+  @include abstracts.screen(md) {
+    position: static;
+
+    background: #fff;
+  }
+
   &__list {
     display: flex;
     gap: 71px;
 
     @include abstracts.screen(lg) {
       gap: 29px;
+    }
+
+    @include abstracts.screen(md) {
+      flex-direction: column;
+      gap: 0;
+      margin-left: 10px;
+      margin-top: 7px;
     }
   }
 

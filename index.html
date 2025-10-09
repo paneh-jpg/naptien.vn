@@ -37,8 +37,23 @@
   <body>
     <header id="header"></header>
     <script>
-      load("#header", "./templates/header.html", initTopMenuDropdown);
+      // Định nghĩa helper nếu chưa có
+      if (typeof $ === "undefined") {
+        const $ = (sel, ctx = document) => ctx.querySelector(sel);
+        const $$ = (sel, ctx = document) =>
+          Array.from(ctx.querySelectorAll(sel));
+        window.$ = $;
+        window.$$ = $$;
+      }
+
+      // Nạp header
+      load("#header", "./templates/header.html", () => {
+        // Sau khi header load xong, khởi tạo dropdown & toggle
+        initTopMenuDropdown();
+        initJsToggle();
+      });
     </script>
+
     <div class="container">
       <main style="margin-top: 100px">
         <p>
